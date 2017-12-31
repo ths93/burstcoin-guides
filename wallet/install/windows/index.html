@@ -258,9 +258,61 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Windows
+      </label>
+    
     <a href="./" title="Windows" class="md-nav__link md-nav__link--active">
       Windows
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#burstcoin-core-wallet" title="Burstcoin Core Wallet" class="md-nav__link">
+    Burstcoin Core Wallet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisties" title="Prerequisties" class="md-nav__link">
+    Prerequisties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronizing-the-burstcoin-blockchain" title="Synchronizing the Burstcoin blockchain" class="md-nav__link">
+    Synchronizing the Burstcoin blockchain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qbundle" title="Qbundle" class="md-nav__link">
+    Qbundle
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -518,6 +570,47 @@
   
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#burstcoin-core-wallet" title="Burstcoin Core Wallet" class="md-nav__link">
+    Burstcoin Core Wallet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisties" title="Prerequisties" class="md-nav__link">
+    Prerequisties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronizing-the-burstcoin-blockchain" title="Synchronizing the Burstcoin blockchain" class="md-nav__link">
+    Synchronizing the Burstcoin blockchain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qbundle" title="Qbundle" class="md-nav__link">
+    Qbundle
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -531,7 +624,38 @@
                 
                   <h1>Windows</h1>
                 
-                
+                <h2 id="burstcoin-core-wallet">Burstcoin Core Wallet</h2>
+<p>The Burst Core wallet is the official version of the Burst wallet. It is available for all operating systems but does not include added functionnalities like plotting, mining, or passphrase management, unlike Qbundle. This tutorial is going to walk you through getting Burst Core completely set up on any computer running on Windows.</p>
+<h3 id="prerequisties">Prerequisties</h3>
+<ul>
+<li>Synchronized Computer Clock</li>
+<li>Windows 7 or 8 64-bit</li>
+<li>Latest version of Java 64-bit</li>
+<li>Dual-Core or Better CPU</li>
+<li>4GB RAM</li>
+<li>10GB Hard Drive Space</li>
+</ul>
+<p>Go to the <a href="https://github.com/PoC-Consortium/burstcoin/releases">download section of the wallet repository</a>,  and download the Burst Core wallet on your computer’s desktop (the file should be named <code>burstcoin-1.2.9.zip</code> or similar, depending to the version of the wallet).</p>
+<p>Extract the content of the <code>.zip</code> file to the desired location on your computer.</p>
+<p><img alt="Burstcoin Extracted Folder" src="../../../img/wallet-install-windows-burstfolder.png" /></p>
+<h3 id="synchronizing-the-burstcoin-blockchain">Synchronizing the Burstcoin blockchain</h3>
+<p>You have probably heard the term “blockchain” used many times on your way to finding Burst. Basically, the blockchain is all of the records and information for the Burst network. It’s the entire Burst history of everything everyone has done with Burst. The accounts, the transactions, the addresses…everything all kept in order, and all publicly viewable. All of this information is organized neatly into “blocks” and stacked on top of each other into a chain. What you need to do now, is to get the Burst blockchain.</p>
+<p>Navigate to the folder in which you extracted the content of the <code>.zip</code> file</p>
+<p>Doube-click on the file named run.bat</p>
+<p><img alt="Run Bat" src="../../../img/wallet-install-windows-runbat.png" /></p>
+<p>This will open up the Burst Core client and you will see a bunch of text scrolling by.</p>
+<p><img alt="Console Out" src="../../../img/wallet-install-windows-console-out-start.png" /></p>
+<p>What it is doing is connecting to the network. After it gets some connections established to other Burst nodes that are running, it’ll check to see if it has an up to date blockchain. You won’t have it, so it will start downloading it. It will create a new folder named burst_db in your installation folder, and will be processing and adding the blockchain history to a couple files in there. These files are burst.mv.db and burst.trace.db . Now, this process will most likely take several hours, so you need to leave your computer running and connected to the internet. You can go about whatever else you need to do on the computer.</p>
+<p><strong>PLEASE NOTE</strong>: If you need to close down the Burst client, or reboot your computer, you should try to do so “gracefully”. First, click on the window of the Burst client program. Next hold down the Ctrl button and hit the C button twice. This is the best way to shut down Burst to keep the blockchain file from being corrupted.</p>
+<p>You’ll see on the screen that the Burst client is processing blocks, and will do so until it catches up with the current block. This can take anywhere from several hours to days. The speed of this is determined by a lot of different factors:</p>
+<ul>
+<li>Nodes you are connected to</li>
+<li>Your internet connection</li>
+<li>Your computer specifications</li>
+</ul>
+<p><img alt="Console Out" src="../../../img/wallet-install-windows-console-out-process.png" /></p>
+<p>Your Burstcoin core wallet has been installed and can be found on <a href="http://localhost:8125">http://localhost:8125</a></p>
+<h2 id="qbundle">Qbundle</h2>
                 
                   
                 
