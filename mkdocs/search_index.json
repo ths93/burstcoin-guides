@@ -1,0 +1,74 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Burstcoin guides for wallet management, mining and node operation\n\n\nOn these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the \nBurstcoin Wiki", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#burstcoin-guides-for-wallet-management-mining-and-node-operation", 
+            "text": "On these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the  Burstcoin Wiki", 
+            "title": "Burstcoin guides for wallet management, mining and node operation"
+        }, 
+        {
+            "location": "/wallet/install/windows/", 
+            "text": "", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/wallet/install/linux/", 
+            "text": "", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/wallet/install/macos/", 
+            "text": "", 
+            "title": "MacOS"
+        }, 
+        {
+            "location": "/wallet/install/android/", 
+            "text": "", 
+            "title": "Android"
+        }, 
+        {
+            "location": "/node/setup/windows/", 
+            "text": "", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/node/setup/linux/", 
+            "text": "", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/mining/plotting/windows/", 
+            "text": "", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/mining/plotting/linux/", 
+            "text": "", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/mining/plotting/macos/", 
+            "text": "", 
+            "title": "MacOS"
+        }, 
+        {
+            "location": "/mining/pool/", 
+            "text": "", 
+            "title": "Pool Mining"
+        }, 
+        {
+            "location": "/mining/solo/", 
+            "text": "", 
+            "title": "Solo Mining"
+        }, 
+        {
+            "location": "/troubleshoot/", 
+            "text": "", 
+            "title": "Troubleshooting"
+        }
+    ]
+}
