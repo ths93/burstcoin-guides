@@ -1,0 +1,47 @@
+# Project information
+site_name: Burstcoin Guides
+site_description: Burstcoin Guides for wallet management, mining and node operating
+site_author: poc-consortium
+site_url: https://github.com/poc-consortium/burstcoin-guides
+site_favicon: img/favicon.ico
+
+# Repository
+repo_name: burstcoin-guides
+repo_url: https://github.com/poc-consortium/burstcoin-guides
+
+# Options
+extra:
+  feature:
+    tabs: false
+  palette:
+    primary: indigo
+    accent: indigo
+  social:
+    - type: github-alt
+      link: https://github.com/poc-consortium
+    - type: twitter
+      link: https://twitter.com/PoC_Consortium
+
+# Page tree
+pages:
+  - Introduction: index.md
+  - Wallet:
+    - Installation:
+      - Windows: wallet/install/windows.md
+      - Linux: wallet/install/linux.md
+      - MacOS: wallet/install/macos.md
+      - Android: wallet/install/android.md
+  - Node:
+    - Setup:
+      - Windows: node/setup/windows.md
+      - Linux: node/setup/linux.md
+  - Mining:
+    - Plotting:
+      - Windows: mining/plotting/windows.md
+      - Linux: mining/plotting/linux.md
+      - MacOS: mining/plotting/macos.md
+    - Pool Mining: mining/pool.md
+    - Solo Mining: mining/solo.md
+  - Troubleshooting: troubleshoot.md
+
+theme: 'material'
