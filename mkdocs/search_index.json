@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Burstcoin guides for wallet management, mining and node operation\n\n\nOn these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the \nBurstcoin Wiki", 
+            "text": "Burstcoin Guides\n\n\nOn these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the \nBurstcoin Wiki", 
             "title": "Introduction"
         }, 
         {
-            "location": "/#burstcoin-guides-for-wallet-management-mining-and-node-operation", 
+            "location": "/#burstcoin-guides", 
             "text": "On these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the  Burstcoin Wiki", 
-            "title": "Burstcoin guides for wallet management, mining and node operation"
+            "title": "Burstcoin Guides"
         }, 
         {
             "location": "/wallet/install/windows/", 
