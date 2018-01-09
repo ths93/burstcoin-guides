@@ -44,6 +44,10 @@ Prerequisities:
 
 <hr>
 
+## Markdown
+
+The guides are written in the [Markdown syntax](https://daringfireball.net/projects/markdown/syntax) and saved in repective `.md` files. Look at [examples](https://markdown-it.github.io/) to see the capability of markdown and its proper usage.
+
 ## Content
 
   - Introduction: ✓ 
