@@ -50,7 +50,7 @@ The guides are written in the [Markdown syntax](https://daringfireball.net/proje
 
 ## Content
 
-  - Introduction: ✓ 
+  - Introduction: ~
   - Wallet:
     - Installation:
       - Windows: x (outdated, 1.2.9)
