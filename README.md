@@ -1,5 +1,7 @@
 # Burstcoin Guides
 
+[Burstcoin Guides](https://poc-consortium.github.io/burstcoin-guides/)
+
 This repository holds the source for the documentation of the Burstcoin guides. The containing guides should help new people to BURST to become familiar with Burstcoin activites and opportunities.
 
 <hr>
