@@ -15,8 +15,8 @@ Everyone can simply contribute, by forking this repository, applying changes to 
 Prerequisities:
 * [Python 2 or Python 3](https://www.python.org/downloads/)
 * [Pip](https://pip.pypa.io/en/stable/installing/)
-* [mkdocs](http://www.mkdocs.org/#installation)
-* [Material Theme](https://github.com/squidfunk/mkdocs-material#quick-start)
+* [Mkdocs](http://www.mkdocs.org/#installing-mkdocs)
+* [Material theme](https://github.com/squidfunk/mkdocs-material#quick-start)
 
 1. **Click the 'Fork' button on top right corner**
    
