@@ -42,6 +42,9 @@ docker-compose up -d
 
 With the `-d` flag, both containers are started as background processes. A `burst_db` folder will be created in the directory of the `docker-compose.yml` file, if it was not created before. This folder is mounted to the MariaDB storage and holds the `burstwallet` database containing the blockchain. The containers can be stopped and removed at any time via `docker-compose down`. With the next start, the `burst_db` folder will be mounted again and your previous blockchain status will be loaded.
 
+!!! important
+    You may encounter an PoolInitializationError when not clearing containers on restart of the docker-compose.yml. In case there are old containers, remove them with `docker rm $(docker ps -a -q)`
+
 ### H2
 
 Alternatively, H2 can be used as database to store the blockchain. H2 is an embedded database, therefore one does not have to run it in a separate container. Simply run the following command.
