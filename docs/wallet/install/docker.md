@@ -13,7 +13,7 @@ Currently, Docker images for BRS version 1.3.6cg with MariaDB or H2 Database are
 
 The following `docker-compose.yml` file can be used to run the BRS with MariaDB database in containers.
 
-```
+``` yaml
 version: '3'
 
 services:
