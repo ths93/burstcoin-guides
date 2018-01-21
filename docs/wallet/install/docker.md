@@ -58,7 +58,7 @@ In order to use a custom config - `nxt.properties` file, you can simply mount a 
 
 **MariaDB**
 
-```
+``` yaml
 version: '3'
 
 services:
@@ -81,6 +81,10 @@ services:
      - ./burst_db:/var/lib/mysql
 ```
 
+``` python
+import tensorflow as tf
+```
+
 **H2**
 
 ```
@@ -88,3 +92,5 @@ docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_d
 ```
 
 ## Sources
+
+The Dockerfiels used to create the Docker images can be found on [Github - https://github.com/PoC-Consortium/burstcoin-docker](https://github.com/PoC-Consortium/burstcoin-docker)
