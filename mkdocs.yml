@@ -30,7 +30,7 @@ pages:
       - Windows: wallet/install/windows.md
       - Linux: wallet/install/linux.md
       - MacOS: wallet/install/macos.md
-      - Android: wallet/install/android.md
+      - Docker: wallet/install/docker.md
   - Node:
     - Setup:
       - Windows: node/setup/windows.md
