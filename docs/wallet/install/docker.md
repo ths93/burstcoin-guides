@@ -55,6 +55,9 @@ docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_d
 
 `"$(pwd)"/burst_db` is the path to the folder which is mounted to the H2 storage. If it does not exist a new `burst_db` folder is created in the current directory.
 
+!!! abstract "Source"
+    The Dockerfiles used to create the Docker images can be found on [Github - https://github.com/PoC-Consortium/burstcoin-docker](https://github.com/PoC-Consortium/burstcoin-docker)
+
 ## Custom configuration
 
 In order to use a custom config - `nxt.properties` file, you can simply mount a folder containing the `nxt-default.properties` and the `nxt.properties` to the `/etc/burstcoin/conf` mount point.
@@ -84,16 +87,8 @@ services:
      - ./burst_db:/var/lib/mysql
 ```
 
-``` python
-import tensorflow as tf
-```
-
 **H2**
 
 ```
 docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -v "$(pwd)"/conf:/etc/burstcoin/conf -d burstcoin/core:1.3.6cg-h2
 ```
-
-## Sources
-
-The Dockerfiels used to create the Docker images can be found on [Github - https://github.com/PoC-Consortium/burstcoin-docker](https://github.com/PoC-Consortium/burstcoin-docker)
