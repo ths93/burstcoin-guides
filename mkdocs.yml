@@ -42,12 +42,8 @@ pages:
       - Mac: node/setup/mac.md
       - Linux: node/setup/linux.md
   - Mining:
-    - Plotting:
-      - Windows: mining/plotting/windows.md
-      - Linux: mining/plotting/linux.md
-      - MacOS: mining/plotting/macos.md
-    - Pool Mining: mining/pool.md
-    - Solo Mining: mining/solo.md
+    - Pt.1 - Plotting: mining/plotting.md
+    - Pt.2 - Mining: mining/mining.md
   - Troubleshooting: troubleshoot.md
 
 # Extensions
