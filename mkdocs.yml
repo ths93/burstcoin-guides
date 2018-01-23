@@ -39,6 +39,7 @@ pages:
   - Node:
     - Setup:
       - Windows: node/setup/windows.md
+      - Mac: node/setup/mac.md
       - Linux: node/setup/linux.md
   - Mining:
     - Plotting:
