@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -16,9 +19,22 @@
         <meta name="author" content="poc-consortium">
       
       
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -26,19 +42,16 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-bfecc7305d.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.aa3de92b.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.792431c1.css">
       
     
     
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
       
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -49,9 +62,9 @@
   </head>
   
   
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -65,52 +78,57 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#what-you-need" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-header-nav__button md-logo">
+          
+            <img src="../../../assets/img/logo.png" width="24" height="24">
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-              
-                <span class="md-header-nav__parent">
-                  Wallet
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  Installation
-                </span>
-              
+              <span class="md-header-nav__topic">
+                Burstcoin Guides
+              </span>
+              <span class="md-header-nav__topic">
+                Windows
+              </span>
             
-            Windows
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -119,6 +137,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -130,7 +149,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -152,6 +171,83 @@
     
     <div class="md-container">
       
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Introduction" class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Wallet" class="md-tabs__link md-tabs__link--active">
+          Wallet
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../node/setup/windows/" title="Node" class="md-tabs__link">
+          Node
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../mining/plotting/" title="Mining" class="md-tabs__link">
+          Mining
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -162,9 +258,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../../assets/img/logo.png" width="24" height="24">
+      
+    </span>
     Burstcoin Guides
   </label>
   
@@ -175,7 +273,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -275,35 +373,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#burstcoin-core-wallet" title="Burstcoin Core Wallet" class="md-nav__link">
-    Burstcoin Core Wallet
+  <a href="#what-you-need" title="What You Need" class="md-nav__link">
+    What You Need
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisties" title="Prerequisties" class="md-nav__link">
-    Prerequisties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#synchronizing-the-burstcoin-blockchain" title="Synchronizing the Burstcoin blockchain" class="md-nav__link">
-    Synchronizing the Burstcoin blockchain
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qbundle" title="Qbundle" class="md-nav__link">
-    Qbundle
+  <a href="#local-wallet-install-steps" title="Local Wallet Install Steps" class="md-nav__link">
+    Local Wallet Install Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qbundle-tips" title="Qbundle Tips" class="md-nav__link">
+    Qbundle Tips
   </a>
   
 </li>
@@ -347,8 +432,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../android/" title="Android" class="md-nav__link">
-      Android
+    <a href="../docker/" title="Docker" class="md-nav__link">
+      Docker
     </a>
   </li>
 
@@ -419,6 +504,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../node/setup/mac/" title="Mac" class="md-nav__link">
+      Mac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../node/setup/linux/" title="Linux" class="md-nav__link">
       Linux
     </a>
@@ -459,28 +556,9 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Plotting
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        Plotting
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../../mining/plotting/windows/" title="Windows" class="md-nav__link">
-      Windows
+    <a href="../../../mining/plotting/" title="Pt.1 - Plotting" class="md-nav__link">
+      Pt.1 - Plotting
     </a>
   </li>
 
@@ -491,49 +569,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../mining/plotting/linux/" title="Linux" class="md-nav__link">
-      Linux
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/plotting/macos/" title="MacOS" class="md-nav__link">
-      MacOS
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/pool/" title="Pool Mining" class="md-nav__link">
-      Pool Mining
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/solo/" title="Solo Mining" class="md-nav__link">
-      Solo Mining
+    <a href="../../../mining/mining/" title="Pt.2 - Mining" class="md-nav__link">
+      Pt.2 - Mining
     </a>
   </li>
 
@@ -574,35 +611,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#burstcoin-core-wallet" title="Burstcoin Core Wallet" class="md-nav__link">
-    Burstcoin Core Wallet
+  <a href="#what-you-need" title="What You Need" class="md-nav__link">
+    What You Need
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisties" title="Prerequisties" class="md-nav__link">
-    Prerequisties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#synchronizing-the-burstcoin-blockchain" title="Synchronizing the Burstcoin blockchain" class="md-nav__link">
-    Synchronizing the Burstcoin blockchain
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qbundle" title="Qbundle" class="md-nav__link">
-    Qbundle
+  <a href="#local-wallet-install-steps" title="Local Wallet Install Steps" class="md-nav__link">
+    Local Wallet Install Steps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qbundle-tips" title="Qbundle Tips" class="md-nav__link">
+    Qbundle Tips
   </a>
   
 </li>
@@ -621,41 +645,56 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/poc-consortium/burstcoin-guides/edit/master/docs/wallet/install/windows.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                   <h1>Windows</h1>
                 
-                <h2 id="burstcoin-core-wallet">Burstcoin Core Wallet</h2>
-<p>The Burst Core wallet is the official version of the Burst wallet. It is available for all operating systems but does not include added functionnalities like plotting, mining, or passphrase management, unlike Qbundle. This tutorial is going to walk you through getting Burst Core completely set up on any computer running on Windows.</p>
-<h3 id="prerequisties">Prerequisties</h3>
+                <p>Qbundle is a wrapper / launcher for the Burst Reference Software offering additional features such as plotting and mining tools, passphrase management and more. This tutorial is going to walk you through getting the Burst Core wallet completely set up using Qbundle on your Windows sytem.</p>
+<h3 id="what-you-need">What You Need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Synchronized Computer Clock</li>
-<li>Windows 7 or 8 64-bit</li>
-<li>Latest version of Java 64-bit</li>
-<li>Dual-Core or Better CPU</li>
-<li>4GB RAM</li>
-<li>10GB Hard Drive Space</li>
+<li>Most Recent Java Version</li>
+<li>Select the download ending in “.exe”<ul>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html">JRE</a></li>
 </ul>
-<p>Go to the <a href="https://github.com/PoC-Consortium/burstcoin/releases">download section of the wallet repository</a>,  and download the Burst Core wallet on your computer’s desktop (the file should be named <code>burstcoin-1.2.9.zip</code> or similar, depending to the version of the wallet).</p>
-<p>Extract the content of the <code>.zip</code> file to the desired location on your computer.</p>
-<p><img alt="Burstcoin Extracted Folder" src="../../../img/wallet-install-windows-burstfolder.png" /></p>
-<h3 id="synchronizing-the-burstcoin-blockchain">Synchronizing the Burstcoin blockchain</h3>
-<p>You have probably heard the term “blockchain” used many times on your way to finding Burst. Basically, the blockchain is all of the records and information for the Burst network. It’s the entire Burst history of everything everyone has done with Burst. The accounts, the transactions, the addresses…everything all kept in order, and all publicly viewable. All of this information is organized neatly into “blocks” and stacked on top of each other into a chain. What you need to do now, is to get the Burst blockchain.</p>
-<p>Navigate to the folder in which you extracted the content of the <code>.zip</code> file</p>
-<p>Doube-click on the file named run.bat</p>
-<p><img alt="Run Bat" src="../../../img/wallet-install-windows-runbat.png" /></p>
-<p>This will open up the Burst Core client and you will see a bunch of text scrolling by.</p>
-<p><img alt="Console Out" src="../../../img/wallet-install-windows-console-out-start.png" /></p>
-<p>What it is doing is connecting to the network. After it gets some connections established to other Burst nodes that are running, it’ll check to see if it has an up to date blockchain. You won’t have it, so it will start downloading it. It will create a new folder named burst_db in your installation folder, and will be processing and adding the blockchain history to a couple files in there. These files are burst.mv.db and burst.trace.db . Now, this process will most likely take several hours, so you need to leave your computer running and connected to the internet. You can go about whatever else you need to do on the computer.</p>
-<p><strong>PLEASE NOTE</strong>: If you need to close down the Burst client, or reboot your computer, you should try to do so “gracefully”. First, click on the window of the Burst client program. Next hold down the Ctrl button and hit the C button twice. This is the best way to shut down Burst to keep the blockchain file from being corrupted.</p>
-<p>You’ll see on the screen that the Burst client is processing blocks, and will do so until it catches up with the current block. This can take anywhere from several hours to days. The speed of this is determined by a lot of different factors:</p>
+</li>
+<li><a href="https://github.com/PoC-Consortium/Qbundle/releases/">Qbundle</a></li>
+<li>Download “Qbundle_installer_[latest version].msi”</li>
+</ul>
+<h3 id="local-wallet-install-steps">Local Wallet Install Steps<a class="headerlink" href="#local-wallet-install-steps" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Nodes you are connected to</li>
-<li>Your internet connection</li>
-<li>Your computer specifications</li>
+<li>Download all files listed above.</li>
+<li>Install Java JRE using the install wizards.</li>
+<li>Double click the Qbundle Installer file and follow the on screen instructions.</li>
+<li>A dialog box titled “Windows protected your PC” may pop up. This is typical with applications related to cryptocurrency.</li>
+<li>Select “More info”.</li>
+<li>Click “Run anyway”.</li>
+<li>Once the installer is finished, make sure the “Launch Qbundle” box is selected, and press “Finish”.</li>
+<li>If any of the necessary components are red, click “Download missing components”. Qbundle will find, download, and install all the programs you need.</li>
+<li>Once all components are green, click “Continue”</li>
+<li>A Windows firewall warning might popup. This happens with almost all cryptocurrency applications. Select “Allow Access”.</li>
+<li>At the top of the application window, select the menu item “Database”.</li>
+<li>Select “Change Database”.</li>
+<li>In the pop-up window select “Portable MariaDB”.</li>
+<li>Click “Next”.</li>
+<li>If a dialog box titled “Download MariaDB” pops up, select “Yes”.</li>
+<li>Allow the download to finish.</li>
+<li>In the window titled “Transition” select “No Copy”.</li>
+<li>Click “Save and close”.</li>
+<li>The wallet will now begin synchronizing the blockchain.</li>
 </ul>
-<p><img alt="Console Out" src="../../../img/wallet-install-windows-console-out-process.png" /></p>
-<p>Your Burstcoin core wallet has been installed and can be found on <a href="http://localhost:8125">http://localhost:8125</a></p>
-<h2 id="qbundle">Qbundle</h2>
+<p>At this point the installation is finished, but you must leave the Qbundle running for it to complete the synchronization of the blockchain. If you do not have a wallet already you can create one now, but you will not be able to send or receive any transactions until the blockchain is fully synchronized. If you are trying to make a time sensitive transaction, use an online wallet. The same wallet used online will be available to use on your local wallet after the blockchain is synchronized.</p>
+<h3 id="qbundle-tips">Qbundle Tips<a class="headerlink" href="#qbundle-tips" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Checking for updates</li>
+<li>File –&gt; Check for updates</li>
+<li>“Account Manager” allows you to save your passphrase encrypted within the wallet for easy access.</li>
+<li>Select “Manager” and enter the required information to add a new account to the wallet.</li>
+<li>This feature is very useful, but should no be used for cold storage wallets.</li>
+<li>To use saved accounts in the future, select “Login Account”, chose the target wallet, and enter the pin code to be automatically logged in.</li>
+<li>If you would like to keep the wallet running but do not want the wallet UI running, run Qbundle in “launcher” mode.</li>
+<li>File –&gt; Mode –&gt; Launcher Mode## Burstcoin Core Wallet</li>
+</ul>
                 
                   
                 
@@ -711,9 +750,9 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        <a href="http://www.mkdocs.org">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -735,10 +774,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6940329b9f.js"></script>
+      <script src="../../../assets/javascripts/application.ed2cc613.js"></script>
       
-      
-      <script>app.initialize({url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"../../.."}})</script>
       
     
     

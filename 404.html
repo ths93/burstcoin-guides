@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -14,9 +17,22 @@
         <meta name="author" content="poc-consortium">
       
       
-        <link rel="shortcut icon" href="/poc-consortium/burstcoin-guides/img/favicon.ico">
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="/poc-consortium/burstcoin-guides/assets/img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -24,19 +40,16 @@
       
     
     
-      <script src="/poc-consortium/burstcoin-guides/assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
-    
-      <link rel="stylesheet" href="/poc-consortium/burstcoin-guides/assets/stylesheets/application-bfecc7305d.css">
+      <link rel="stylesheet" href="/poc-consortium/burstcoin-guides/assets/stylesheets/application.aa3de92b.css">
       
-        <link rel="stylesheet" href="/poc-consortium/burstcoin-guides/assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="/poc-consortium/burstcoin-guides/assets/stylesheets/application-palette.792431c1.css">
       
     
     
+      <script src="/poc-consortium/burstcoin-guides/assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
       
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -47,9 +60,9 @@
   </head>
   
   
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -63,42 +76,53 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+    
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-header-nav__button md-logo">
+          
+            <img src="/poc-consortium/burstcoin-guides/assets/img/logo.png" width="24" height="24">
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-            Burstcoin Guides
+              <span class="md-header-nav__topic">
+                Burstcoin Guides
+              </span>
+              <span class="md-header-nav__topic">
+                
+              </span>
+            
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -107,6 +131,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -118,7 +143,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -140,6 +165,81 @@
     
     <div class="md-container">
       
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="/poc-consortium/burstcoin-guides/" title="Introduction" class="md-tabs__link md-tabs__link--active">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/poc-consortium/burstcoin-guides/wallet/install/windows/" title="Wallet" class="md-tabs__link">
+          Wallet
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/poc-consortium/burstcoin-guides/node/setup/windows/" title="Node" class="md-tabs__link">
+          Node
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/poc-consortium/burstcoin-guides/mining/plotting/" title="Mining" class="md-tabs__link">
+          Mining
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -150,9 +250,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <span class="md-nav__button md-logo">
+      
+        <img src="/poc-consortium/burstcoin-guides/assets/img/logo.png" width="24" height="24">
+      
+    </span>
     Burstcoin Guides
   </label>
   
@@ -163,7 +265,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -272,8 +374,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/wallet/install/android/" title="Android" class="md-nav__link">
-      Android
+    <a href="/poc-consortium/burstcoin-guides/wallet/install/docker/" title="Docker" class="md-nav__link">
+      Docker
     </a>
   </li>
 
@@ -344,6 +446,18 @@
 
 
   <li class="md-nav__item">
+    <a href="/poc-consortium/burstcoin-guides/node/setup/mac/" title="Mac" class="md-nav__link">
+      Mac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="/poc-consortium/burstcoin-guides/node/setup/linux/" title="Linux" class="md-nav__link">
       Linux
     </a>
@@ -384,28 +498,9 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Plotting
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        Plotting
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/mining/plotting/windows/" title="Windows" class="md-nav__link">
-      Windows
+    <a href="/poc-consortium/burstcoin-guides/mining/plotting/" title="Pt.1 - Plotting" class="md-nav__link">
+      Pt.1 - Plotting
     </a>
   </li>
 
@@ -416,49 +511,8 @@
 
 
   <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/mining/plotting/linux/" title="Linux" class="md-nav__link">
-      Linux
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/mining/plotting/macos/" title="MacOS" class="md-nav__link">
-      MacOS
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/mining/pool/" title="Pool Mining" class="md-nav__link">
-      Pool Mining
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="/poc-consortium/burstcoin-guides/mining/solo/" title="Solo Mining" class="md-nav__link">
-      Solo Mining
+    <a href="/poc-consortium/burstcoin-guides/mining/mining/" title="Pt.2 - Mining" class="md-nav__link">
+      Pt.2 - Mining
     </a>
   </li>
 
@@ -509,9 +563,9 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        <a href="http://www.mkdocs.org">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -533,10 +587,9 @@
       
     </div>
     
-      <script src="/poc-consortium/burstcoin-guides/assets/javascripts/application-6940329b9f.js"></script>
+      <script src="/poc-consortium/burstcoin-guides/assets/javascripts/application.ed2cc613.js"></script>
       
-      
-      <script>app.initialize({url:{base:"/poc-consortium/burstcoin-guides"}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"/poc-consortium/burstcoin-guides"}})</script>
       
     
     

@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -16,9 +19,22 @@
         <meta name="author" content="poc-consortium">
       
       
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.1">
     
     
       
@@ -26,19 +42,16 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-bfecc7305d.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.aa3de92b.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.792431c1.css">
       
     
     
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
       
-        
-        
-        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -49,9 +62,9 @@
   </head>
   
   
-  
-  
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -65,52 +78,57 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#debian" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="https://github.com/poc-consortium/burstcoin-guides" title="Burstcoin Guides" class="md-header-nav__button md-logo">
+          
+            <img src="../../../assets/img/logo.png" width="24" height="24">
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-              
-                <span class="md-header-nav__parent">
-                  Wallet
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  Installation
-                </span>
-              
+              <span class="md-header-nav__topic">
+                Burstcoin Guides
+              </span>
+              <span class="md-header-nav__topic">
+                Linux
+              </span>
             
-            Linux
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -119,6 +137,7 @@
     </div>
   </div>
 </div>
+          
         
       </div>
       
@@ -130,7 +149,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -152,6 +171,83 @@
     
     <div class="md-container">
       
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Introduction" class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../windows/" title="Wallet" class="md-tabs__link md-tabs__link--active">
+          Wallet
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../node/setup/windows/" title="Node" class="md-tabs__link">
+          Node
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../mining/plotting/" title="Mining" class="md-tabs__link">
+          Mining
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -162,9 +258,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../../assets/img/logo.png" width="24" height="24">
+      
+    </span>
     Burstcoin Guides
   </label>
   
@@ -175,7 +273,7 @@
   
 
 
-  <a href="https://github.com/poc-consortium/burstcoin-guides" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/poc-consortium/burstcoin-guides/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -270,9 +368,116 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Linux
+      </label>
+    
     <a href="./" title="Linux" class="md-nav__link md-nav__link--active">
       Linux
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#debian" title="Debian" class="md-nav__link">
+    Debian
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-install" title="Quick Install" class="md-nav__link">
+    Quick Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell-script" title="Shell Script" class="md-nav__link">
+    Shell Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-to-sources" title="Add to sources" class="md-nav__link">
+    Add to sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" title="Ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages_1" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-install_1" title="Quick Install" class="md-nav__link">
+    Quick Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell-script_1" title="Shell Script" class="md-nav__link">
+    Shell Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-to-sources_1" title="Add to sources" class="md-nav__link">
+    Add to sources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#found-an-issue" title="Found an Issue?" class="md-nav__link">
+    Found an Issue?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -295,8 +500,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../android/" title="Android" class="md-nav__link">
-      Android
+    <a href="../docker/" title="Docker" class="md-nav__link">
+      Docker
     </a>
   </li>
 
@@ -367,6 +572,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../node/setup/mac/" title="Mac" class="md-nav__link">
+      Mac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../node/setup/linux/" title="Linux" class="md-nav__link">
       Linux
     </a>
@@ -407,28 +624,9 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
-    
-    <label class="md-nav__link" for="nav-4-1">
-      Plotting
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-1">
-        Plotting
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../../mining/plotting/windows/" title="Windows" class="md-nav__link">
-      Windows
+    <a href="../../../mining/plotting/" title="Pt.1 - Plotting" class="md-nav__link">
+      Pt.1 - Plotting
     </a>
   </li>
 
@@ -439,49 +637,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../mining/plotting/linux/" title="Linux" class="md-nav__link">
-      Linux
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/plotting/macos/" title="MacOS" class="md-nav__link">
-      MacOS
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/pool/" title="Pool Mining" class="md-nav__link">
-      Pool Mining
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../mining/solo/" title="Solo Mining" class="md-nav__link">
-      Solo Mining
+    <a href="../../../mining/mining/" title="Pt.2 - Mining" class="md-nav__link">
+      Pt.2 - Mining
     </a>
   </li>
 
@@ -518,6 +675,102 @@
   
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#debian" title="Debian" class="md-nav__link">
+    Debian
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-install" title="Quick Install" class="md-nav__link">
+    Quick Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell-script" title="Shell Script" class="md-nav__link">
+    Shell Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-to-sources" title="Add to sources" class="md-nav__link">
+    Add to sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubuntu" title="Ubuntu" class="md-nav__link">
+    Ubuntu
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packages_1" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-install_1" title="Quick Install" class="md-nav__link">
+    Quick Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell-script_1" title="Shell Script" class="md-nav__link">
+    Shell Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-to-sources_1" title="Add to sources" class="md-nav__link">
+    Add to sources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#found-an-issue" title="Found an Issue?" class="md-nav__link">
+    Found an Issue?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -528,10 +781,116 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/poc-consortium/burstcoin-guides/edit/master/docs/wallet/install/linux.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                   <h1>Linux</h1>
                 
-                
+                <p>Packages are provided for Debian (stretch, jessie) and Ubuntu (zesty, xenial)</p>
+<h2 id="debian">Debian<a class="headerlink" href="#debian" title="Permanent link">&para;</a></h2>
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/ac0v/burstcoin">burstcoincg - Burstcoin wallet powered by CryptoGuru based on MariaDB.</a></li>
+<li><a href="https://github.com/Creepsky/creepMiner">creepminer - The creepMiner is a client application for mining Burst on a pool or solo.</a></li>
+</ul>
+<h3 id="quick-install">Quick Install<a class="headerlink" href="#quick-install" title="Permanent link">&para;</a></h3>
+<p>Copy &amp; Paste this line into your terminal:</p>
+<div class="codehilite"><pre><span></span>\wget -q -O - http://package.cryptoguru.org/debian/init.sh | bash
+</pre></div>
+
+<p>and now you can install packages like:</p>
+<div class="codehilite"><pre><span></span>apt-get install burstcoincg
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The wallet is started automatically after installation.</p>
+</div>
+<h3 id="shell-script">Shell Script<a class="headerlink" href="#shell-script" title="Permanent link">&para;</a></h3>
+<p>The Quick- Install downloads a shell script and executes it directly. If you're really concerned about the argument that it may contain nefarious activities within, you can easily review it before you run it.</p>
+<div class="codehilite"><pre><span></span>wget http://package.cryptoguru.org/debian/init.sh
+less install.sh
+bash install.sh
+</pre></div>
+
+<p>and now you can install packages like:</p>
+<div class="codehilite"><pre><span></span>apt-get install burstcoincg
+</pre></div>
+
+<h3 id="add-to-sources">Add to sources<a class="headerlink" href="#add-to-sources" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>stretch</strong></p>
+<p>Add the following stuff to your sources.list
+<div class="codehilite"><pre><span></span>deb https://package.cryptoguru.org/debian/stretch stretch main
+</pre></div>
+sometimes you will need to play with package pining</p>
+</li>
+<li>
+<p><strong>jessie</strong></p>
+<p>Add the following stuff to your sources.list
+<div class="codehilite"><pre><span></span>deb https://package.cryptoguru.org/debian/jessie jessie main
+</pre></div>
+sometimes you will need to play with package pining and you may have to add
+<code>deb http://ftp.debian.org/debian jessie-backports main</code></p>
+</li>
+</ul>
+<hr />
+<h2 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">&para;</a></h2>
+<h3 id="packages_1">Packages<a class="headerlink" href="#packages_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/ac0v/burstcoin">burstcoincg - Burstcoin wallet powered by CryptoGuru based on MariaDB.</a></li>
+<li><a href="https://github.com/Creepsky/creepMiner">creepminer - The creepMiner is a client application for mining Burst on a pool or solo.</a></li>
+</ul>
+<h3 id="quick-install_1">Quick Install<a class="headerlink" href="#quick-install_1" title="Permanent link">&para;</a></h3>
+<p>Copy &amp; Paste this line into your terminal:
+<div class="codehilite"><pre><span></span>\wget -q -O - http://package.cryptoguru.org/ubuntu/init.sh | bash
+</pre></div></p>
+<p>and now you can install packages like:</p>
+<div class="codehilite"><pre><span></span>apt-get install burstcoincg
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The wallet is started automatically after installation.</p>
+</div>
+<h3 id="shell-script_1">Shell Script<a class="headerlink" href="#shell-script_1" title="Permanent link">&para;</a></h3>
+<p>The Quick- Install downloads a shell script and executes it directly. If you're really concerned about the argument that it may contain nefarious activities within, you can easily review it before you run it.</p>
+<div class="codehilite"><pre><span></span>wget http://package.cryptoguru.org/ubuntu/init.sh
+less install.sh
+bash install.sh
+</pre></div>
+
+<p>and now you can install packages like:</p>
+<div class="codehilite"><pre><span></span>apt-get install burstcoincg
+</pre></div>
+
+<h3 id="add-to-sources_1">Add to sources<a class="headerlink" href="#add-to-sources_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>zesty</strong></p>
+<p>Add the following stuff to your sources.list
+<div class="codehilite"><pre><span></span>deb https://package.cryptoguru.org/ubuntu/zesty zesty main
+</pre></div>
+sometimes you will need to play with package pining</p>
+</li>
+<li>
+<p><strong>xenial</strong></p>
+<p>Add the following stuff to your sources.list
+<div class="codehilite"><pre><span></span>deb https://package.cryptoguru.org/ubuntu/xenial xenial main
+</pre></div>
+sometimes you will need to play with package pining</p>
+</li>
+</ul>
+<h3 id="found-an-issue">Found an Issue?<a class="headerlink" href="#found-an-issue" title="Permanent link">&para;</a></h3>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Please report all bugs at <a href="https://github.com/PoC-Consortium/burstcoin/issues">GitHub</a>. You can also discuss your problems and get support using <a href="https://discord.gg/NKXGM6N">Discord</a></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons</a>3.0 Attribution License. &middot; Ubuntu is a registered trademark of Canonical Ltd.</p>
+</div>
                 
                   
                 
@@ -587,9 +946,9 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        <a href="http://www.mkdocs.org">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -611,10 +970,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6940329b9f.js"></script>
+      <script src="../../../assets/javascripts/application.ed2cc613.js"></script>
       
-      
-      <script>app.initialize({url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"../../.."}})</script>
       
     
     
