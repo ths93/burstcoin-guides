@@ -21,6 +21,9 @@ and now you can install packages like:
 apt-get install burstcoincg
 ```
 
+!!! Info
+	The wallet is started automatically after installation.
+
 ### Shell Script
 
 The Quick- Install downloads a shell script and executes it directly. If you're really concerned about the argument that it may contain nefarious activities within, you can easily review it before you run it.
@@ -80,6 +83,9 @@ and now you can install packages like:
 ```
 apt-get install burstcoincg
 ```
+
+!!! Info
+	The wallet is started automatically after installation.
 
 ### Shell Script
 
