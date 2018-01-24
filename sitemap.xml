@@ -32,7 +32,19 @@
     
         
     <url>
-     <loc>https://github.com/poc-consortium/burstcoin-guides/mining/windows/</loc>
+     <loc>https://github.com/poc-consortium/burstcoin-guides/mining/overview/</loc>
+     <lastmod>2018-01-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/poc-consortium/burstcoin-guides/mining/plotting/windows/</loc>
+     <lastmod>2018-01-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://github.com/poc-consortium/burstcoin-guides/mining/plotting/windows/</loc>
      <lastmod>2018-01-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
