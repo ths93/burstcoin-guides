@@ -59,7 +59,7 @@ GRANT ALL PRIVILEGES ON burstwallet.* TO 'burstwallet'@'localhost';
 2. Find the folder you downloaded from github titled `burstcoin-1.3.6cg.zip` and double click it. Archive utility will now extract it to a new folder.
 3. Rename the extracted folder to `burstcoin`.
 4. Open the `conf` folder inside the extracted folder
-5. Right click the file `nxt-default.properties` and select "Open With --&gt; TextEdit".
+5. Right click the file `nxt-default.properties` and select "Open With --> TextEdit".
 6. Find the following lines and enter `burstwallet` as database user and your password (assigned beforehand) as database password
 ```
 nxt.dbUsername=burstwallet
