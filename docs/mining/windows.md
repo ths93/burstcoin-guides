@@ -13,6 +13,9 @@ The disk space you dedicate to Burst can't be used otherwise once plotted (unles
 
 HDD disk space will be occupied by **plot files**. Plot files are like bingo cards that contain pre-solved responses to the cryptographic problem that the blockchain poses to miners each and every round.
 
+!!! tip
+    Find out how much you can make with the capacity at your disposal using a [mining calculator](https://explore.burst.cryptoguru.org/tool/calculate).
+
 Plotting the disk space you wish to dedicate to mining Burst can be accomplished multiple ways but in this tutorial we will be using XPlotter, a CPU based plotter (in contrast to GPU based plotting software) that automatically create optimized plot files. This means your plot files will be of the highest possible quality and efficiency.
 
 ---
