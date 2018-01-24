@@ -52,7 +52,7 @@ pages:
     - Plotting:
       - Windows: mining/plotting/windows.md
     - Mining:
-      - Windows: mining/plotting/windows.md
+      - Windows: mining/mining/windows.md
   - Troubleshooting: troubleshoot.md
 
 # Extensions
