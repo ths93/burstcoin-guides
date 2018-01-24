@@ -26,19 +26,16 @@ Otherwise, download Blago's miner and extract it to your desktop or the local di
 
 Open the miner.conf document located in the Blago's miner directory with notepad. What you see here is a reference chart for the mining software to utilize when initializing the mining program.
 
-!!! note ""
-    "Mode" = whether your mining software uploads **deadline hashes** to a *pool* or directly to the burst network in *solo* mode.
-
 As it is the miner.conf document is automatically designated to a fictitious pool. You must update the file to direct the software to the proper **web address** / **IP** and **port**. You can usually find this information directly on each pool website.
 
 You can find a pool overview [here](http://burstcoin.cc/pool). Remember that spreading the capacity accross multiple pools is healthier for the network, so you may want to avoid the most crowded ones.
 
 !!! warning
-    Remember to always check if the pool suits the size of your plot files.
+    Remember to always check if the pool suits the size of your plot files. Certain pools are better suited for small or large miners.
 
 <strong>You must acquire the pools web address and port and propagate this information throughout the miner.conf document</strong>.
 
-Let's say you want to mine on the [0-100 cryptoguru pool](https://0-100-pool.burst.cryptoguru.org/) (maintained by the PoC Consortium developers). Once completed, your miner.conf document should look like that:
+Let's say you want to mine on the [0-100 cryptoguru pool](https://0-100-pool.burst.cryptoguru.org/) (a pool maintained by the PoC Consortium developers for miners of any size). Once completed, your miner.conf document should look like that:
 
 ```
 {
