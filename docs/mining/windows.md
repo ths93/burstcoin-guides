@@ -26,6 +26,8 @@ Plotting the disk space you wish to dedicate to mining Burst can be accomplished
 
 * [XPlotter](https://github.com/Blagodarenko/XPlotter/releases)
 
+### Configuration
+
 !!! info "Plot files"
     There are a few things you have to understand to get a general overview of the nature of plot files.
 
@@ -38,6 +40,7 @@ Plotting the disk space you wish to dedicate to mining Burst can be accomplished
     Nonces are ordered **linearly** in **sequential order**. the number they're assigned to is arbitrary but they should **never overlap** (overlapping reduces plot efficiency and triggers an error in most mining software).
 
     With Xplotter, that is all the technical knowledge you need to operate the software and to create an optimized plot file.
+
 
 To execute Xplotter, it is necessary to create a run script - `run.bat`. This batch contains the parameters for Xplotter, e.g. where and how much to plot and the resources to consume to do so.
 
@@ -83,6 +86,8 @@ Replace the parameters according to your needs.
     @cd /d %~dp0
     XPlotter_avx.exe -id 17559140197979902351 -sn 0 -n 20000 -t 4 -path F:\burst\plots -mem 5G
     ```
+
+### Start Plotting
 
 Once you have filled out the `run.bat` file, Xplotter is ready to plot your available hard disk space within the resources you wish to allocate. You can now save the file as `run.bat` in the Xplotter directory.
 
