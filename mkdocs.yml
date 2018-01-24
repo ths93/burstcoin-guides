@@ -11,13 +11,14 @@ repo_url: https://github.com/poc-consortium/burstcoin-guides
 # Theme
 theme:
   name: 'material'
+  custom_dir: 'theme'
   favicon: assets/img/favicon.ico
   logo: assets/img/logo.png
   feature:
     tabs: true
   palette:
-    primary: indigo
-    accent: indigo
+    primary: '#00579D'
+    accent: '#262626'
 
 # Options
 extra:

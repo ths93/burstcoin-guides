@@ -38,7 +38,7 @@
 
 6. Now you will create the database for the blockchain.
   - Log into MariaDB by typing the following in.
-  
+
     mysql -u root -p -h localhost
 
   - The default password for MariaDB is blank. If it asks you for a password, simple press enter.
