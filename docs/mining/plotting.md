@@ -11,61 +11,79 @@ If you want to use the software as a standalone, follow the instructions here.
 
 The disk space you dedicate to Burst can't be used otherwise once plotted (unless you delete the plot files) so make sure you can truly afford the space dedicated to mining Burst.
 
-HDD disk space will be occupied by **plot Files**. Plot files are like bingo cards that contain pre-solved responses to the cryptographic problem that the blockchain poses to miners each and every round.
+HDD disk space will be occupied by **plot files**. Plot files are like bingo cards that contain pre-solved responses to the cryptographic problem that the blockchain poses to miners each and every round.
 
 Plotting the disk space you wish to dedicate to mining Burst can be accomplished multiple ways but in this tutorial we will be using XPlotter, a CPU based plotter (in contrast to GPU based plotting software) that automatically create optimized plot files. This means your plot files will be of the highest possible quality and efficiency.
 
 ---
 
-## Instructions
+## Prerequisites
 
-Download XPlotter and extract it to your desktop or a local directory of your choice.
+* [XPlotter](https://github.com/Blagodarenko/XPlotter/releases)
 
-[**Download on GitHub**](https://github.com/Blagodarenko/XPlotter/releases)
+## Plotting
 
-### What is a plot file?
+!!! info "Plot files"
+    There are a few things you have to understand to get a general overview of the nature of plot files.
 
-There are a few things you have to understand to get a general overview of the nature of plot files.
+    Plot files consist of **nonces** which contain the cryptographic solutions you will be mining with.
 
-Plot files consist of **nonces** which contain the cryptographic solutions you will be mining with.
+    * **1 nonce = 262144 bytes**
 
-!!! info
-    **1 nonce = 262144 bytes**
+    Plot file size is measured in nonces so you will have to convert the size of your dedicated disk space to nonces. Nonce calculators exist to make this process easier.
 
-Plot file size is measured in nonces so you will have to convert the size of your dedicated disk space to nonces. Nonce calculators exist to make this process easier.
-
-!!! info
     Nonces are ordered **linearly** in **sequential order**. the number they're assigned to is arbitrary but they should **never overlap** (overlapping reduces plot efficiency and triggers an error in most mining software).
 
-With Xplotter, that is all the technical knowledge you need to operate the software and to create an optimized plot file.
+    With Xplotter, that is all the technical knowledge you need to operate the software and to create an optimized plot file.
 
-### Plotting your drive
+To execute Xplotter, it is necessary to create a run script - `run.bat`. This batch contains the parameters for Xplotter, e.g. where and how much to plot and the resources to consume to do so.
 
-To execute Xplotter we will have to create a text document and save it as **run.bat**. this batch file will tell Xplotter where and how much to plot and the resources to consume to do so. Follow the next instructions closely:
-
-1. Go into the Xplotter directory and create a new text document and paste this command line into the notepad :
+1. Go into the Xplotter directory and create a new file called `run.bat` with your preferred text editor (Notepad / Notepad++). Copy & Paste the following command into the file:
 
 ```
 @setlocal
 @cd /d %~dp0
-XPlotter_avx.exe -id XXXXXXXXXXXXXX -sn O -n P -t Q -path Z:\plots -mem yG
+XPlotter_avx.exe -id <your numeric account ID> -sn <starting nonce> -n <total nonces> -t <threads to use> -path <path>Z:\plots -mem <amount of RAM to use>
 ```
 
-We will now fill in the blanks regarding the variables in italics.
+Replace the parameters according to your needs.
 
-+ **-id** = your numeric account ID. This can be found by clicking your account's name in your wallet and copying the numeric account ID.
-+ **-sn** = Starting Nonce. If this is your first time ever plotting it is recommended to start your nonce with 0 (ZERO).
-+ **-n** = total nonces
-+ **-t** = threads. This refers to your machine's CPU architecture: if your CPU has multiple cores you can use them, otherwise put '1' here.
-+ **-P** = path: where you want to store your plot files (for example 'D:/Burst/Plots', but any path will suffice).
-+ **-mem** = The amount of RAM in gigabytes you wish to utilize during this process.
++ `-id <your numeric account ID>`
+
+    This can be found by clicking your account's name in your wallet and copying the numeric account ID.
+
++ `-sn <starting nonce>`
+
+    If this is your first time ever plotting it is recommended to start your nonce with 0 (ZERO).
+
++ `-n <total nonces>`
+
++ `-t <threads to use>`
+
+    This refers to your machine's CPU architecture: if your CPU has multiple cores you can use them, otherwise put '1' here.
+
++ `-P <path>`
+
+    where you want to store your plot files (for example 'D:/Burst/Plots', but any path will suffice).
+
++ `-mem <amount of RAM to use>`
+
+    The amount of RAM in gigabytes you wish to utilize during this process.
 
 !!! warning
     Never exceed recommended RAM usage! Always leave around 20% remaining RAM for remedial tasks.
 
-Once you have filled out your text document, Xplotter is ready to plot your available hard disk space within the resources you wish to allocate. You can now **SAVE AS** run.bat in the Xplotter directory.
+!!! tip "Example"
+    Your file content should look similiar to the following lines.
+    ```
+    @setlocal
+    @cd /d %~dp0
+    XPlotter_avx.exe -id 17559140197979902351 -sn 0 -n 20000 -t 6 -path F:\burst\plots -mem 5G
+    ```
 
-To maximize Xplotter's plotting power you're going to want to right click run.bat and select 'run as an administrator'.
+Once you have filled out the `run.bat` file, Xplotter is ready to plot your available hard disk space within the resources you wish to allocate. You can now save the file as `run.bat` in the Xplotter directory.
+
+To maximize Xplotter's plotting power you're going to want to right click `run.bat` and select 'run as an administrator'.
 
 You should see something similar to this:
 
@@ -75,10 +93,10 @@ The plotting process will consume a great deal of resources if done correctly. Y
 
 This may take a while depending on the size of your plot but you can run multiple instances of Xplotter if you have multi threading!
 
-### Tips
 
--Add one to the last nonce to get the starting nonce of your next plot file. remember sequential is good, overlapping is bad.
--Keep a record of your command line(s) that you're currently using so that if you need to pause Xplotter you can re-initiate the same plot by executing the EXACT same command!
--Repeat these steps if you'd like to create multiple plot files. We recommend you make your plot files large but not bigger than a few TB as encountering an error after hours or days of plotting can be very frustrating.
+!!! Tip "Tips"
+    - Add one to the last nonce to get the starting nonce of your next plot file. remember sequential is good, overlapping is bad.
+    - Keep a record of your command line(s) that you're currently using so that if you need to pause Xplotter you can re-initiate the same plot by executing the EXACT same command!
+    - Repeat these steps if you'd like to create multiple plot files. We recommend you make your plot files large but not bigger than a few TB as encountering an error after hours or days of plotting can be very frustrating.
 
 Happy plotting!

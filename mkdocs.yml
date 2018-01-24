@@ -23,10 +23,15 @@ theme:
 # Options
 extra:
   social:
+    - type: discord
+      link: https://github.com/poc-consortium
     - type: github-alt
       link: https://github.com/poc-consortium
     - type: twitter
-      link: https://twitter.com/PoC_Consortium
+      link: https://twitter.com/burstcoin_dev
+
+extra_css:
+  - 'stylesheets/burstcoin.css'
 
 # Page tree
 pages:
