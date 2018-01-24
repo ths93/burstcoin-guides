@@ -30,7 +30,7 @@ extra:
 
 # Page tree
 pages:
-  - Introduction: index.md
+  - Overview: index.md
   - Wallet:
     - Installation:
       - Windows: wallet/install/windows.md
@@ -40,7 +40,7 @@ pages:
   - Node:
     - Setup:
       - Windows: node/setup/windows.md
-      - Mac: node/setup/mac.md
+      - MacOS: node/setup/macos.md
       - Linux: node/setup/linux.md
   - Mining:
     - Pt.1 - Plotting: mining/plotting.md

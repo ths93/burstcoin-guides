@@ -123,11 +123,5 @@ apt-get install burstcoincg
 	sometimes you will need to play with package pining
 
 
-### Found an Issue?
-
-
-!!! Bug
-	Please report all bugs at [GitHub](https://github.com/PoC-Consortium/burstcoin/issues). You can also discuss your problems and get support using [Discord](https://discord.gg/NKXGM6N)
-
 !!! Info
-	The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the [Creative Commons](https://creativecommons.org/licenses/by/3.0/)3.0 Attribution License. &middot; Ubuntu is a registered trademark of Canonical Ltd.
+	The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the [Creative Commons](https://creativecommons.org/licenses/by/3.0/) 3.0 Attribution License. &middot; Ubuntu is a registered trademark of Canonical Ltd.
