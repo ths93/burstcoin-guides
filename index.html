@@ -64,7 +64,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="#00579d" data-md-color-accent="#262626">
   
     <svg class="md-svg">
       <defs>
@@ -104,7 +104,7 @@
                 Burstcoin Guides
               </span>
               <span class="md-header-nav__topic">
-                Introduction
+                Overview
               </span>
             
           
@@ -183,8 +183,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="." title="Introduction" class="md-tabs__link md-tabs__link--active">
-        Introduction
+      <a href="." title="Overview" class="md-tabs__link md-tabs__link--active">
+        Overview
       </a>
     
   </li>
@@ -302,9 +302,36 @@
       
     
     
-    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
-      Introduction
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Overview
+      </label>
+    
+    <a href="." title="Overview" class="md-nav__link md-nav__link--active">
+      Overview
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#found-an-issue" title="Found an Issue?" class="md-nav__link">
+    Found an Issue?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -461,8 +488,8 @@
 
 
   <li class="md-nav__item">
-    <a href="node/setup/mac/" title="Mac" class="md-nav__link">
-      Mac
+    <a href="node/setup/macos/" title="MacOS" class="md-nav__link">
+      MacOS
     </a>
   </li>
 
@@ -566,6 +593,20 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#found-an-issue" title="Found an Issue?" class="md-nav__link">
+    Found an Issue?
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -580,7 +621,12 @@
                 
                 
                 <h1 id="burstcoin-guides">Burstcoin Guides<a class="headerlink" href="#burstcoin-guides" title="Permanent link">&para;</a></h1>
-<p>On these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the <a href="https://burstwiki.org/wiki/Main_Page">Burstcoin Wiki</a></p>
+<p>On these pages you can find guides for managing your Burstcoin wallet, setting up a Burstcoin miner and operating a Burstcoin network node. If you look for general information on the BURST ecosystem, please visit the <a href="https://burstwiki.org/wiki/Main_Page">Burstcoin Wiki</a>.</p>
+<h3 id="found-an-issue">Found an Issue?<a class="headerlink" href="#found-an-issue" title="Permanent link">&para;</a></h3>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Please report all bugs at <a href="https://github.com/PoC-Consortium/burstcoin/issues">GitHub</a>. You can also discuss your problems and get support using <a href="https://discord.gg/NKXGM6N">Discord</a></p>
+</div>
                 
                   
                 
@@ -593,15 +639,48 @@
         </div>
       </main>
       
-        
+        <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
 <footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
   
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
         
+
+        <!-- Link to next page -->
         
-          <a href="wallet/install/windows/" title="Windows" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+          <a href="wallet/install/windows/" title="Windows"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
@@ -610,23 +689,25 @@
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
             </div>
           </a>
         
       </nav>
     </div>
   
+
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         
-        powered by
-        <a href="http://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
       </div>
+
+      <!-- Social links -->
       
         
   <div class="md-footer-social">

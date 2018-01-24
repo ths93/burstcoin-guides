@@ -64,7 +64,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="#00579d" data-md-color-accent="#262626">
   
     <svg class="md-svg">
       <defs>
@@ -78,7 +78,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#what-you-need" tabindex="1" class="md-skip">
+      <a href="#prerequisites" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -185,8 +185,8 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../.." title="Introduction" class="md-tabs__link">
-        Introduction
+      <a href="../../.." title="Overview" class="md-tabs__link">
+        Overview
       </a>
     
   </li>
@@ -296,8 +296,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../.." title="Overview" class="md-nav__link">
+      Overview
     </a>
   </li>
 
@@ -397,15 +397,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-need" title="What You Need" class="md-nav__link">
-    What You Need
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-wallet-install-steps" title="Local Wallet Install Steps" class="md-nav__link">
-    Local Wallet Install Steps
+  <a href="#setup-mariadb" title="Setup MariaDB" class="md-nav__link">
+    Setup MariaDB
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-configuration" title="Database configuration" class="md-nav__link">
+    Database configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-wallet" title="Setup Wallet" class="md-nav__link">
+    Setup Wallet
   </a>
   
 </li>
@@ -497,8 +517,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../node/setup/mac/" title="Mac" class="md-nav__link">
-      Mac
+    <a href="../../../node/setup/macos/" title="MacOS" class="md-nav__link">
+      MacOS
     </a>
   </li>
 
@@ -604,15 +624,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-need" title="What You Need" class="md-nav__link">
-    What You Need
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-wallet-install-steps" title="Local Wallet Install Steps" class="md-nav__link">
-    Local Wallet Install Steps
+  <a href="#setup-mariadb" title="Setup MariaDB" class="md-nav__link">
+    Setup MariaDB
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-configuration" title="Database configuration" class="md-nav__link">
+    Database configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-wallet" title="Setup Wallet" class="md-nav__link">
+    Setup Wallet
   </a>
   
 </li>
@@ -636,102 +676,72 @@
                 
                   <h1>MacOS</h1>
                 
-                <h3 id="what-you-need">What You Need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h3>
+                <p>In order to run the wallet locally, we need a database to store the blochchain information. The following guide shows the setup of MariaDB as database and the installation of the Burst Reference Software on MacOS.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Most Recent Java Version.</li>
-<li>Select the download ending in ".dmg".<ul>
-<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html">JRE</a></li>
-</ul>
-</li>
-<li>Homebrew</li>
-<li>You will install this directly from the terminal.</li>
-<li>This is a macOS package installer, for more information see <a href="https://brew.sh/">brew.sh</a></li>
-<li>MariaDB</li>
-<li>You will also install this directly from the terminal.</li>
-<li><a href="https://github.com/PoC-Consortium/burstcoin/releases">Burst Wallet v1.3.6cg Release Files</a></a></li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html">Java</a></li>
+<li><a href="https://brew.sh/">Homebrew</a></li>
 </ul>
 <hr />
-<h3 id="local-wallet-install-steps">Local Wallet Install Steps<a class="headerlink" href="#local-wallet-install-steps" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Download and install the latest Java version using the Java install wizard.</li>
-<li>Open Terminal.</li>
-<li>
-<p>Install brew by pasting the following into Terminal and pressing enter.</p>
-<p>/usr/bin/ruby -e "$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)"</p>
-</li>
-<li>
-<p>Before installing, it will tell you exactly what it will change, and asks for your confirmation of install.</p>
-</li>
-<li>Enter your computer's login password and press enter.</li>
-<li>Allow the install to finish.</li>
-<li>Now install MariaDB.</li>
-<li>
-<p>First check that Xcode is up to date by typing the following and pressing enter.</p>
-<p>xcode-select --install</p>
-<ul>
-<li>After installing xcode, install MariaDB by typing the following and pressing enter.</li>
-</ul>
-<p>brew install mariadb</p>
-</li>
-<li>
-<p>Once MariaDB is finished installing, start MariaDB with the following.</p>
-<p>brew services start mariadb</p>
-</li>
-<li>
-<p>Now you will create the database for the blockchain.</p>
-</li>
-<li>
-<p>Log into MariaDB by typing the following in.</p>
-<p>mysql -u root -p -h localhost</p>
-</li>
-<li>
+<h2 id="setup-mariadb">Setup MariaDB<a class="headerlink" href="#setup-mariadb" title="Permanent link">&para;</a></h2>
+<p>MariaDB is used as database to store the blockchain. The following steps will guide you through the installation of MariaDB on MacOS.</p>
+<p>First check that Xcode is up to date by typing the following and pressing enter.
+<div class="codehilite"><pre><span></span>xcode-select --install
+</pre></div>
+After installing Xcode, install MariaDB by typing the following and pressing enter.
+<div class="codehilite"><pre><span></span>brew install mariadb
+</pre></div>
+Once MariaDB is finished installing, start MariaDB with the following.
+<div class="codehilite"><pre><span></span>brew services start mariadb
+</pre></div></p>
+<hr />
+<h3 id="database-configuration">Database configuration<a class="headerlink" href="#database-configuration" title="Permanent link">&para;</a></h3>
+<p>As soon as MariaDB is successfully installed, we can log into the MariaDB interface.</p>
+<div class="codehilite"><pre><span></span>mysql -u root -p -h localhost
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>The default password for MariaDB is blank. If it asks you for a password, simple press enter.</p>
-<ul>
-<li>Type the following, one line at a time, pressing enter between lines.</li>
-</ul>
-<p>CREATE USER 'burstwallet'@'localhost' IDENTIFIED BY 'password';</p>
-<ul>
-<li>Make sure to replace "password" with a password of your choice.</li>
-</ul>
-<p>GRANT ALL PRIVILEGES ON burstwallet.* TO 'burstwallet'@'localhost';</p>
-<p>CREATE DATABASE burstwallet;</p>
-</li>
-<li>
-<p>Press ctr + c to exit.</p>
-</li>
-<li>Find the folder you downloaded from github titled "burstcoin-1.3.6cg.zip" and double click it. Archive utility will now extract it to a new folder.</li>
-<li>Rename the extracted folder to "burstcoin".</li>
-<li>Open the folder.</li>
-<li>Open the "conf" folder.</li>
-<li>Right click the file "nxt-default.properties" and select "Open With --&gt; TextEdit".</li>
-<li>Find the lines...</li>
-<li>"nxt.dbUsername="<ul>
-<li>Enter "burstwallet" after the equals sign.</li>
-</ul>
-</li>
-<li>"nxt.dbPassword="<ul>
-<li>Enter the password you assigned to the MariaDB database (in step 6 part 2) after the equals sign.</li>
-</ul>
-</li>
+</div>
+<p>Now we create the database <code>burstwallet</code> for the blockchain.</p>
+<div class="codehilite"><pre><span></span>CREATE DATABASE burstwallet;
+</pre></div>
+
+<p>In addition, we create a user which is used by the wallet to access the database. Replace <code>&lt;your password&gt;</code> with a password of your choice.
+<div class="codehilite"><pre><span></span>CREATE USER &#39;burstwallet&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;&lt;your password&gt;&#39;;
+</pre></div></p>
+<p>Finally we, grant this user all privileges for the database <code>burstwallet</code>.
+<div class="codehilite"><pre><span></span>GRANT ALL PRIVILEGES ON burstwallet.* TO &#39;burstwallet&#39;@&#39;localhost&#39;;
+</pre></div></p>
+<hr />
+<h2 id="setup-wallet">Setup Wallet<a class="headerlink" href="#setup-wallet" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Now, download the <code>burstcoin-1.3.6cg.zip</code> file from the <a href="https://github.com/PoC-Consortium/burstcoin/releases">Github release section</a></li>
+<li>Find the folder you downloaded from github titled <code>burstcoin-1.3.6cg.zip</code> and double click it. Archive utility will now extract it to a new folder.</li>
+<li>Rename the extracted folder to <code>burstcoin</code>.</li>
+<li>Open the <code>conf</code> folder inside the extracted folder</li>
+<li>Right click the file <code>nxt-default.properties</code> and select "Open With &rarr; TextEdit".</li>
+<li>Find the following lines and enter <code>burstwallet</code> as database user and your password (assigned beforehand) as database password
+<div class="codehilite"><pre><span></span>nxt.dbUsername=burstwallet
+nxt.dbPassword=&lt;your password&gt;
+</pre></div></li>
 <li>Move that folder to your home folder. This may appear as your username.</li>
-<li>
-<p>Back in terminal, navigate to the burstcoin folder by typing the follwoing and pressing enter.</p>
-<p>cd ~/burstcoin</p>
-</li>
-<li>
-<p>Set "burst.sh" as executable by typing the following and pressing enter.</p>
-<p>chmod +x burst.sh</p>
-</li>
-<li>
-<p>Now execute "burst.sh" by typing the following and pressing enter. This is how you will start the wallet in the future. To execute this command you must be inside the burtscoin folder in the terminal (refer to step 15).</p>
-<p>./burst.sh</p>
-</li>
-<li>
-<p>The wallet should now be running. In any web browser type the following in the url field and press enter to access the wallet interface.</p>
-<p><a href="http://localhost:8125/">http://localhost:8125/</a></p>
-</li>
+<li>Back in terminal, navigate to the <code>burstcoin</code> folder.
+<div class="codehilite"><pre><span></span>cd ~/burstcoin
+</pre></div></li>
+<li>Make <code>burst.sh</code> executable.
+<div class="codehilite"><pre><span></span>chmod +x burst.sh
+</pre></div></li>
+<li>Now execute <code>burst.sh</code>. This is how you will start the wallet in the future. To execute this command you must be inside the burtscoin folder in the terminal.
+<div class="codehilite"><pre><span></span>./burst.sh
+</pre></div></li>
+<li>The wallet should now be running. In your web browser navigate to <a href="http://localhost:8125/">http://localhost:8125/</a> to access the wallet interface.</li>
 </ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>At this point the installation is finished, but you must leave the terminal running for it to complete the synchronization of the blockchain. If you do not have a wallet already you can create one now, but you will not be able to send or receive any transactions until the blockchain is fully synchronized. If you are trying to make a time sensitive transaction, use an <a href="https://wallet.burst.cryptoguru.org:8125/index.html">online wallet</a>. The same wallet used online will be available to use on your local wallet after the blockchain is synchronized.</p>
+</div>
                 
                   
                 
@@ -744,17 +754,50 @@
         </div>
       </main>
       
-        
+        <!--
+  Copyright (c) 2016-2018 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
 <footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
   
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
         
-          <a href="../linux/" title="Linux" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../linux/"
+              title="Linux"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
             </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
@@ -764,9 +807,14 @@
             </div>
           </a>
         
+
+        <!-- Link to next page -->
         
-          <a href="../docker/" title="Docker" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+          <a href="../docker/" title="Docker"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
@@ -775,23 +823,25 @@
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
             </div>
           </a>
         
       </nav>
     </div>
   
+
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         
-        powered by
-        <a href="http://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
       </div>
+
+      <!-- Social links -->
       
         
   <div class="md-footer-social">
