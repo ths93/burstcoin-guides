@@ -49,8 +49,10 @@ pages:
       - Linux: node/setup/linux.md
   - Mining:
     - Overview: mining/overview.md
-    - Plotting: mining/plotting/windows.md
-    - Mining: mining/plotting/windows.md
+    - Plotting:
+      - Windows: mining/plotting/windows.md
+    - Mining:
+      - Windows: mining/plotting/windows.md
   - Troubleshooting: troubleshoot.md
 
 # Extensions
