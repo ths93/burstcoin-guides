@@ -58,6 +58,8 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
+      <link rel="stylesheet" href="../../stylesheets/burstcoin.css">
+    
     
   </head>
   
@@ -77,6 +79,10 @@
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
     
     
       <header class="md-header" data-md-component="header">
@@ -523,9 +529,102 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Pt.2 - Mining
+      </label>
+    
     <a href="./" title="Pt.2 - Mining" class="md-nav__link md-nav__link--active">
       Pt.2 - Mining
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pool-or-solo-mining" title="Pool or solo mining?" class="md-nav__link">
+    Pool or solo mining?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-pool-mining" title="Instructions: pool mining" class="md-nav__link">
+    Instructions: pool mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-the-minerconf-document" title="Edit the miner.conf Document" class="md-nav__link">
+    Edit the miner.conf Document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-passphrasestxt-document" title="Create a passphrases.txt document" class="md-nav__link">
+    Create a passphrases.txt document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-reward-assignment" title="Set the Reward Assignment" class="md-nav__link">
+    Set the Reward Assignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-mining-software" title="Run the mining software" class="md-nav__link">
+    Run the mining software
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-solo-mining" title="Instructions: solo mining" class="md-nav__link">
+    Instructions: solo mining
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -554,6 +653,101 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pool-or-solo-mining" title="Pool or solo mining?" class="md-nav__link">
+    Pool or solo mining?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-pool-mining" title="Instructions: pool mining" class="md-nav__link">
+    Instructions: pool mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-the-minerconf-document" title="Edit the miner.conf Document" class="md-nav__link">
+    Edit the miner.conf Document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-passphrasestxt-document" title="Create a passphrases.txt document" class="md-nav__link">
+    Create a passphrases.txt document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-reward-assignment" title="Set the Reward Assignment" class="md-nav__link">
+    Set the Reward Assignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-mining-software" title="Run the mining software" class="md-nav__link">
+    Run the mining software
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-solo-mining" title="Instructions: solo mining" class="md-nav__link">
+    Instructions: solo mining
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -564,55 +758,150 @@
                 
                   <h1>Pt.2 - Mining</h1>
                 
-                <p>This is the continuation of the "plotting" tutorial. </br>
-In this instructional we're going to configure <strong>Blago's CPU Mining Software</strong> to mine the plots you already generated on your machine.</p>
-<hr />
-
-<h3>Let's get started!</h3>
-
+                <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<p>This is the continuation of the "Pt.1 - plotting" tutorial. In this instructional we're going to configure Blago's CPU Mining Software to mine the plots you already generated on your machine.</p>
 <p><strong>If you are using Qbundle, the software is included: just click “Tools” -&gt; “Miner”.</strong></p>
-<p>Otherwise, download Blago's miner and extract it to your desktop or the local directory of your choice.</p>
-<p><strong>=&gt; <a href="https://github.com/Blagodarenko/miner-burst/releases" target="_blank" rel="nofollow noopener">Download on GitHub</a> &lt;=</strong>
-<h2>Edit Miner.conf Document</h2>
--open the miner.conf document in the Blago's miner directory with notepad. What you see here is a reference chart for the mining software to utilize when initializing the mining program.</p>
-<p>&nbsp;
-<blockquote><strong>"Mode"</strong> = whether your mining software uploads <strong>deadline hashes</strong> to a <strong><em>"pool"</em></strong> or directly to the burst network in <strong><em>"solo"</em></strong> mode.</blockquote>
-(it's up to you how you want to mine BURST but if you have less than 200TB of disk space plotted then I would recommend a pool)</p>
-<p>As it is the miner.conf document is automatically designated to a fictitious pool which means you must update the file to direct the software to the proper <strong>web address</strong> or <strong>IP</strong> and <strong>port</strong>. You will need to know the pool of your choice's <strong>server address</strong> and <strong>port</strong> so you can update the miner.conf file.</p>
-<p>-You can shop around for pools here : <a href="https://docs.google.com/spreadsheets/d/1KHu9BWwy_QXIYAx2m_Tzs9BqPoTYUDhEDbHihZEXGsE/edit#gid=327728699" target="_blank" rel="noopener">Pools spreadsheet</a></p>
-<p>-And you can see how each pool performs here : <a href="http://burstcoin.cc/pool" target="_blank" rel="nofollow noopener">burstcoin.cc/pool</a></p>
-<p>=&gt; Remember to always check if the pool suits the size of your plot files.</p>
+<p>Otherwise, download Blago's miner and extract it to your desktop or the local directory of your choice:</p>
+<p><a href="https://github.com/Blagodarenko/miner-burst/releases"><strong>Download on GitHub</strong></a></p>
+<h3 id="pool-or-solo-mining">Pool or solo mining?<a class="headerlink" href="#pool-or-solo-mining" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A solo miner directly uploads his deadlines to the network - every time he forges a block, the entire block reward goes to him.</li>
+<li>A pool miner redirects his earnings to a pool of miners; they are then redistributed following certain criterias to all miners in the pool. This way, you get rewarded even when you don't forge a block. On the other hand, you will receive less burstcoins when you forge a block yourself.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Pool mining is recommended unless you are mining with a very sizeable capacity (hundreds of terabytes). There is no point in solo mining if you never forge any block!</p>
+</div>
+<hr />
+<h2 id="instructions-pool-mining">Instructions: pool mining<a class="headerlink" href="#instructions-pool-mining" title="Permanent link">&para;</a></h2>
+<h3 id="edit-the-minerconf-document">Edit the miner.conf Document<a class="headerlink" href="#edit-the-minerconf-document" title="Permanent link">&para;</a></h3>
+<p>Open the miner.conf document located in the Blago's miner directory with notepad. What you see here is a reference chart for the mining software to utilize when initializing the mining program.</p>
+<p>As it is the miner.conf document is automatically designated to a fictitious pool. You must update the file to direct the software to the proper <strong>web address</strong> / <strong>IP</strong> and <strong>port</strong>. You can usually find this information directly on each pool website.</p>
+<p>You can find a pool overview <a href="http://burstcoin.cc/pool">here</a>. Remember that spreading the capacity accross multiple pools is healthier for the network, so you may want to avoid the most crowded ones.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Remember to always check if the pool suits the size of your plot files. Certain pools are better suited for small or large miners.</p>
+</div>
 <p><strong>You must acquire the pools web address and port and propagate this information throughout the miner.conf document</strong>.</p>
-<p>Let's say you are mining at <a href="http://burstmine.tk/" rel="nofollow noopener">burstmine.tk</a> (the <strong>Port</strong> there is :8080), here's how the completed miner.conf document would look:</p>
-<p><img src="https://steemitimages.com/0x0/https://steemitimages.com/DQmNjRLBzHpeHhosXr9kHyiJv91Nik7mjomPYLNzBGRbmcP/burstminetkconf.png" alt="burstminetkconf.png" /></p>
-<p><strong>Further more beside "Paths": in the miner.conf document you will need to refer to all of your completely plotted plot files while maintaining the syntax properly.</strong></p>
-<p>So if your plot files are along the paths "C:\BURST\Plots" and "E:\BURST\Plots" then this line should look like this:
-<blockquote>"Paths": ["C:\BURST\Plots","E:\BURST\Plots"],**</blockquote>
-Now that you have your miner.conf document prepared properly, <strong>save</strong> it.
-<h2>Passphrases.txt</h2>
-Let's <strong>create a passphrases.txt document</strong> within the Blagos directory</p>
-<p>-Within the Blagos Burst Miner directory create a new text document.</p>
-<p>-Paste your wallet's passphrase into the document</p>
-<p>-Save the document as passphrases.txt
-<h2>Setting the Reward Assignment!</h2>
-<em>By this time you should already have selected the pool you wish to mine with. If not you can find a list of pool wallet addresses above in this tutorial.</em></p>
-<p><strong>If you are using Qbundle, just click “Tools” -&gt; “Reward recipient”.</strong></p>
-<p>-Pick a pool and copy the wallet address onto your clipboard</p>
-<p>-If you are using Qbundle, just click “Tools” -&gt; “Reward recipient”.<strong> </strong>Otherwise go to this page: <a href="http://127.0.0.1:8125/rewardassignment.html" target="_blank" rel="nofollow noopener">Set Reward Assignment</a></p>
-<p>-Enter the <strong>pool's BURST address</strong> and your <strong>mining wallet's passphrase</strong> in the respective fields.</p>
-<p><em>The pool address for <strong>burstmine.tk</strong> is <strong>BURST-H96D-FT7X-Q5WB-DX23A</strong></em></p>
-<p><em>Now when your pool of choice is dividing up the Burst rewards among the miners it will automatically send your burstcoins to your Burst wallet.</em>
-<h2>RUN BLAGOS!</h2>
-Blagos should look like this when you start it up:</p>
-<p><img src="https://steemitimages.com/0x0/https://steemitimages.com/DQmdk7Gf5dQ4yvXmy75Ah3uidjo8CYw8QsHbLot2KKobAmG/blagosstartup.png" alt="blagosstartup.png" />
-<h2>Optional : Going Solo</h2>
-Conversely if you'd like to mine <em>solo</em> then change the miner.conf document to look like this:</p>
-<p><img src="https://steemitimages.com/0x0/https://steemitimages.com/DQmTdjAwvQZoeCHJSj7w46SqsAhx2CuxfEb2ZGjLmktxjzT/soloconf.png" alt="soloconf.png" /></p>
-<p>Also, set the <strong>reward assignment</strong> to your <strong>own Burst wallet address</strong>.</p>
-<p><img src="https://steemitimages.com/0x0/https://steemitimages.com/DQmXofB5v8C8qC3f5EYAY3YGQuHkhQQqX83Bsr5r5CUYTrL/soloassignment.png" alt="soloassignment.png" /></p>
-<p><strong>Wait 4 block rounds</strong> and <strong>start up Blagos,</strong> it should look the same as above.
-<h4>Congratulations! You are now mining Burst!</h4>
-<p style="text-align: right;"><em>Credit : Gooplanets</em></p></p>
+<p>Let's say you want to mine on the <a href="https://0-100-pool.burst.cryptoguru.org/">0-100 cryptoguru pool</a> (a pool maintained by the PoC Consortium developers for miners of any size). Once completed, your miner.conf document should look like that:</p>
+<div class="codehilite"><pre><span></span>{
+   &quot;Mode&quot; : &quot;pool&quot;,
+   &quot;Server&quot; : &quot;0-100-pool.burst.cryptoguru.org&quot;,
+   &quot;Port&quot;: &quot;8124&quot;,
+
+   &quot;UpdaterAddr&quot; : &quot;0-100-pool.burst.cryptoguru.org&quot;,
+   &quot;UpdaterPort&quot;: &quot;8124&quot;,
+
+   &quot;InfoAddr&quot; : &quot;0-100-pool.burst.cryptoguru.org&quot;,
+   &quot;InfoPort&quot;: &quot;8124&quot;,
+
+   &quot;EnableProxy&quot;: false,
+   &quot;ProxyPort&quot;: 8126,
+
+   &quot;Paths&quot;:[&quot;C:\\plots&quot;,&quot;D:\\plots&quot;,&quot;G:\\plots&quot;,&quot;H:\\plots&quot;,&quot;I:\\plots&quot;,&quot;J:\\plots&quot;,&quot;K:\\plots&quot;,&quot;L:\\plots&quot;,&quot;N:\\plots&quot;,&quot;P:\\plots&quot;,&quot;R:\\plots&quot;,&quot;S:\\plots&quot;,&quot;T:\\plots&quot;,&quot;U:\\plots&quot;],
+   &quot;CacheSize&quot; : 10000,
+
+   &quot;Debug&quot;: true,
+   &quot;UseHDDWakeUp&quot;: true,
+
+   &quot;TargetDeadline&quot;: 80000000,
+
+   &quot;SendInterval&quot;: 100,
+   &quot;UpdateInterval&quot;: 950,
+
+   &quot;UseLog&quot; : true, 
+   &quot;ShowWinner&quot; : false, 
+   &quot;UseBoost&quot; : false,
+
+   &quot;WinSizeX&quot;: 76,
+   &quot;WinSizeY&quot;: 60
+}                        
+</pre></div>
+
+<p>Furthermore, beside "Paths" you will need to refer to all of your completely plotted plot files while maintaining the syntax properly.</p>
+<p>So if your plot files are along the paths "C:\BURST\Plots" and "E:\BURST\Plots" then this line should look like this:</p>
+<div class="codehilite"><pre><span></span>&quot;Paths&quot;: [&quot;C:\BURST\Plots&quot;,&quot;E:\BURST\Plots&quot;]
+</pre></div>
+
+<p>Now that you have your miner.conf document prepared properly, <strong>save it</strong>.</p>
+<h3 id="create-a-passphrasestxt-document">Create a passphrases.txt document<a class="headerlink" href="#create-a-passphrasestxt-document" title="Permanent link">&para;</a></h3>
+<p>Let's create a passphrases.txt document within the Blagos directory</p>
+<ol>
+<li>Create a new text document within the Blagos Burst Miner directory.</li>
+<li>Paste your wallet's passphrase into the document.</li>
+<li>Save the document as passphrases.txt</li>
+</ol>
+<h3 id="set-the-reward-assignment">Set the Reward Assignment<a class="headerlink" href="#set-the-reward-assignment" title="Permanent link">&para;</a></h3>
+<p><em>By now you should already have selected the pool you wish to mine with.</em></p>
+<p>Setting a reward assignment for your wallet will allow the pool to collect your earnings and redistribute them automatically.</p>
+<ol>
+<li>Copy the wallet address of the pool you want to mine with onto your clipboard</li>
+<li>Go to this page: <a href="http://127.0.0.1:8125/rewardassignment.html">set reward assignment</a>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>If you are using Qbundle, just click “Tools” -&gt; “Reward recipient” instead.</strong></p>
+</div>
+<ol>
+<li>Enter the pool's BURST address and your mining wallet's passphrase in the respective fields.</li>
+</ol>
+<p>The pool address for 0-100-pool.burst.cryptoguru.org is <strong>888561138747819634</strong>. This pool uses a numeric address, but others use a standard account ID ("BURST-XXX-...).</p>
+<ol>
+<li>Click "submit". If it is successful, you will now have to wait 4 Blocks (16-20 minutes on average) until your assignment takes effect!</li>
+</ol>
+<p>Now when your pool of choice is dividing up the Burst rewards among the miners it will automatically send your burstcoins to your Burst wallet.</p>
+<h3 id="run-the-mining-software">Run the mining software<a class="headerlink" href="#run-the-mining-software" title="Permanent link">&para;</a></h3>
+<p>Blagos should look like this when you start it up:</p>
+<p><img alt="Blagosstartup" src="https://steemitimages.com/0x0/https://steemitimages.com/DQmdk7Gf5dQ4yvXmy75Ah3uidjo8CYw8QsHbLot2KKobAmG/blagosstartup.png" /></p>
+<p><strong>Congratulations! You are now mining Burst!</strong></p>
+<hr />
+<h2 id="instructions-solo-mining">Instructions: solo mining<a class="headerlink" href="#instructions-solo-mining" title="Permanent link">&para;</a></h2>
+<p>Open the miner.conf document located in the Blago's miner directory with notepad. What you see here is a reference chart for the mining software to utilize when initializing the mining program.</p>
+<p>If you want to mine solo, modify your miner.conf document so it looks like this:</p>
+<div class="codehilite"><pre><span></span>{
+   &quot;Mode&quot; : &quot;solo&quot;,
+   &quot;Server&quot; : &quot;localhost&quot;,
+   &quot;Port&quot;: &quot;8125&quot;,
+
+   &quot;UpdaterAddr&quot; : &quot;localhost&quot;,
+   &quot;UpdaterPort&quot;: &quot;8125&quot;,
+
+   &quot;InfoAddr&quot; : &quot;localhost&quot;,
+   &quot;InfoPort&quot;: &quot;8125&quot;,
+
+   &quot;EnableProxy&quot;: false,
+   &quot;ProxyPort&quot;: 8126,
+
+   &quot;Paths&quot;:[&quot;C:\\plots&quot;,&quot;D:\\plots&quot;,&quot;G:\\plots&quot;,&quot;H:\\plots&quot;,&quot;I:\\plots&quot;,&quot;J:\\plots&quot;,&quot;K:\\plots&quot;,&quot;L:\\plots&quot;,&quot;N:\\plots&quot;,&quot;P:\\plots&quot;,&quot;R:\\plots&quot;,&quot;S:\\plots&quot;,&quot;T:\\plots&quot;,&quot;U:\\plots&quot;],
+   &quot;CacheSize&quot; : 10000,
+
+   &quot;Debug&quot;: true,
+   &quot;UseHDDWakeUp&quot;: true,
+
+   &quot;TargetDeadline&quot;: 80000000,
+
+   &quot;SendInterval&quot;: 100,
+   &quot;UpdateInterval&quot;: 950,
+
+   &quot;UseLog&quot; : true, 
+   &quot;ShowWinner&quot; : false, 
+   &quot;UseBoost&quot; : false,
+
+   &quot;WinSizeX&quot;: 76,
+   &quot;WinSizeY&quot;: 60
+}                        
+</pre></div>
+
+<p>You also need to set the reward assignment to your <strong>own Burst wallet address</strong>.</p>
+<p>Go to this page: <a href="http://127.0.0.1:8125/rewardassignment.html">set reward assignment</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>If you are using Qbundle, just click “Tools” -&gt; “Reward recipient” instead.</strong></p>
+</div>
+<p>Enter your own wallet address under "reward recipient", and your wallet's passphrase under "your secret passphrase". Click "submit".</p>
+<p>Wait 4 block and start Blago's miner, it should look similar to the mining image above.</p>
+<p><strong>Congratulations! You are now mining Burst!</strong></p>
                 
                   
                 
@@ -719,9 +1008,11 @@ Conversely if you'd like to mine <em>solo</em> then change the miner.conf docume
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+      <a href="https://github.com/poc-consortium" class="md-footer-social__link fa fa-discord"></a>
+    
       <a href="https://github.com/poc-consortium" class="md-footer-social__link fa fa-github-alt"></a>
     
-      <a href="https://twitter.com/PoC_Consortium" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/burstcoin_dev" class="md-footer-social__link fa fa-twitter"></a>
     
   </div>
 
