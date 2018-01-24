@@ -24,7 +24,7 @@ theme:
 extra:
   social:
     - type: discord
-      link: https://github.com/poc-consortium
+      link: https://discord.gg/q3QhyaY
     - type: github-alt
       link: https://github.com/poc-consortium
     - type: twitter
@@ -48,8 +48,7 @@ pages:
       - MacOS: node/setup/macos.md
       - Linux: node/setup/linux.md
   - Mining:
-    - Pt.1 - Plotting: mining/plotting.md
-    - Pt.2 - Mining: mining/mining.md
+      - Windows: mining/windows.md
   - Troubleshooting: troubleshoot.md
 
 # Extensions
