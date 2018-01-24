@@ -1,5 +1,7 @@
 ## Introduction
 
+### Prerequisites
+
 This is the continuation of the "Pt.1 - plotting" tutorial. In this instructional we're going to configure Blago's CPU Mining Software to mine the plots you already generated on your machine.
 
 **If you are using Qbundle, the software is included: just click “Tools” -> “Miner”.**
@@ -8,9 +10,17 @@ Otherwise, download Blago's miner and extract it to your desktop or the local di
 
 [**Download on GitHub**](https://github.com/Blagodarenko/miner-burst/releases)
 
+### Pool or solo mining?
+
+- A solo miner directly uploads his deadlines to the network - every time he forges a block, the entire block reward goes to him.
+- A pool miner redirects his earnings to a pool of miners; they are then redistributed following certain criterias to all miners in the pool. This way, you get rewarded even when you don't forge a block. On the other hand, you will receive less burstcoins when you forge a block yourself.
+
+!!! tip
+    Pool mining is recommended unless you are mining with a very sizeable capacity (hundreds of terabytes). There is no point in solo mining if you never forge any block!
+
 ---
 
-## Instructions
+## Instructions: pool mining
 
 ### Edit the miner.conf Document
 
@@ -18,9 +28,6 @@ Open the miner.conf document located in the Blago's miner directory with notepad
 
 !!! note ""
     "Mode" = whether your mining software uploads **deadline hashes** to a *pool* or directly to the burst network in *solo* mode.
-
-!!! tip
-    Pool mining is recommended unless you are mining with a very sizeable capacity (hundreds of terabytes).
 
 As it is the miner.conf document is automatically designated to a fictitious pool. You must update the file to direct the software to the proper **web address** / **IP** and **port**. You can usually find this information directly on each pool website.
 
@@ -112,11 +119,15 @@ Blagos should look like this when you start it up:
 
 ![Blagosstartup](https://steemitimages.com/0x0/https://steemitimages.com/DQmdk7Gf5dQ4yvXmy75Ah3uidjo8CYw8QsHbLot2KKobAmG/blagosstartup.png)
 
+**Congratulations! You are now mining Burst!**
+
 ---
 
-## Optional: going solo
+## Instructions: solo mining
 
-If you prefer to mine solo then change the miner.conf document to look like this:
+Open the miner.conf document located in the Blago's miner directory with notepad. What you see here is a reference chart for the mining software to utilize when initializing the mining program.
+
+If you want to mine solo, modify your miner.conf document so it looks like this:
 
 ```
 {
@@ -153,8 +164,15 @@ If you prefer to mine solo then change the miner.conf document to look like this
 }                        
 ```
 
-You also need to set the reward assignment to your **own Burst wallet address**. Enter your own wallet address under "reward recipient", and your wallet's passphrase under "your secret passphrase".
+You also need to set the reward assignment to your **own Burst wallet address**.
 
-Wait 4 block and start Blago's miner, it should look the same as above.
+Go to this page: [set reward assignment](http://127.0.0.1:8125/rewardassignment.html).
+
+!!! note
+    **If you are using Qbundle, just click “Tools” -> “Reward recipient” instead.**
+
+Enter your own wallet address under "reward recipient", and your wallet's passphrase under "your secret passphrase". Click "submit".
+
+Wait 4 block and start Blago's miner, it should look similar to the mining image above.
 
 **Congratulations! You are now mining Burst!**
