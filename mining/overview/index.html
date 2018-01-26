@@ -551,6 +551,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../plotting/linux/" title="Linux" class="md-nav__link">
+      Linux
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -583,6 +595,18 @@
   <li class="md-nav__item">
     <a href="../mining/windows/" title="Windows" class="md-nav__link">
       Windows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mining/linux/" title="Linux" class="md-nav__link">
+      Linux
     </a>
   </li>
 
@@ -626,7 +650,11 @@
                 
                   <h1>Overview</h1>
                 
-                <p>In order to mine Burst, you first have to plot the disk space you want to use. Plotting may be a time and energy-consuming task, however it only has to be done once.</p>
+                <div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Before you start, we strongly recommend to read the according <a href="https://burstwiki.org/wiki/Technical_information_to_create_plot_files">Burstwiki page on plotting</a> and the <a href="https://burstwiki.org/wiki/Technical_information_about_mining_and_block_forging">Burstwiki page on mining</a>. </p>
+</div>
+<p>In order to mine Burst, you first have to plot the disk space you want to use. Plotting may be a time and energy-consuming task, however it only has to be done once.</p>
 <p>The disk space you dedicate to Burst can't be used otherwise once plotted (unless you delete the plot files) so make sure you can truly afford the space dedicated to mining Burst.</p>
 <p>HDD disk space will be occupied by <strong>plot files</strong>. Plot files are like bingo cards that contain pre-solved responses to the cryptographic problem that the blockchain poses to miners each and every round.</p>
 <div class="admonition tip">
@@ -634,6 +662,16 @@
 <p>Find out how much you can make with the capacity at your disposal using a <a href="https://explore.burst.cryptoguru.org/tool/calculate">mining calculator</a>.</p>
 </div>
 <p>Plotting the disk space you wish to dedicate to mining Burst can be accomplished multiple ways, several plotters exist for different operating systems. CPU based plotters (in contrast to GPU based plotting software) generally create optimized plot files. This means your plot files will be of the highest possible quality and efficiency. So be aware, how you are generating your plot files.</p>
+<div class="admonition info">
+<p class="admonition-title">Plot files</p>
+<p>There are a few things you have to understand to get a general overview of the nature of plot files.</p>
+<p>Plot files consist of <strong>nonces</strong> which contain the cryptographic solutions you will be mining with.</p>
+<ul>
+<li><strong>1 nonce = 262144 bytes</strong></li>
+</ul>
+<p>Plot file size is measured in nonces so you will have to convert the size of your dedicated disk space to nonces. Nonce calculators exist to make this process easier.</p>
+<p>Nonces are ordered <strong>linearly</strong> in <strong>sequential order</strong>. the number they're assigned to is arbitrary but they should <strong>never overlap</strong> (overlapping reduces plot efficiency and triggers an error in most mining software).</p>
+</div>
                 
                   
                 

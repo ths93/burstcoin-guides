@@ -609,6 +609,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../linux/" title="Linux" class="md-nav__link">
+      Linux
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -641,6 +653,18 @@
   <li class="md-nav__item">
     <a href="../../mining/windows/" title="Windows" class="md-nav__link">
       Windows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../mining/linux/" title="Linux" class="md-nav__link">
+      Linux
     </a>
   </li>
 
@@ -742,7 +766,7 @@
 <p>This tutorial will teach you how to plot your drives with <a href="https://github.com/Blagodarenko/XPlotter/releases">XPlotter</a>, a CPU plotter creating optimized plot files.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>With Qbundle, the software is already included: just click "Tools" -&gt; "Plotter". A guide is also present in the plotter page - it is recommended to follow the instructions detailed there.</p>
+<p>With Qbundle, the software is already included: just click "Tools" &rarr; "Plotter". A guide is also present in the plotter page - it is recommended to follow the instructions detailed there.</p>
 </div>
 <p>If you want to use the software as a standalone, follow the instructions here.</p>
 <h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
@@ -750,17 +774,6 @@
 <li><a href="https://github.com/Blagodarenko/XPlotter/releases">XPlotter</a></li>
 </ul>
 <h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Plot files</p>
-<p>There are a few things you have to understand to get a general overview of the nature of plot files.</p>
-<p>Plot files consist of <strong>nonces</strong> which contain the cryptographic solutions you will be mining with.</p>
-<ul>
-<li><strong>1 nonce = 262144 bytes</strong></li>
-</ul>
-<p>Plot file size is measured in nonces so you will have to convert the size of your dedicated disk space to nonces. Nonce calculators exist to make this process easier.</p>
-<p>Nonces are ordered <strong>linearly</strong> in <strong>sequential order</strong>. the number they're assigned to is arbitrary but they should <strong>never overlap</strong> (overlapping reduces plot efficiency and triggers an error in most mining software).</p>
-<p>With Xplotter, that is all the technical knowledge you need to operate the software and to create an optimized plot file.</p>
-</div>
 <p>To execute Xplotter, it is necessary to create a run script - <code>run.bat</code>. This batch contains the parameters for Xplotter, e.g. where and how much to plot and the resources to consume to do so.</p>
 <ol>
 <li>Go into the Xplotter directory and create a new file called <code>run.bat</code> with your preferred text editor (Notepad / Notepad++). Copy &amp; Paste the following command into the file:</li>
@@ -891,7 +904,7 @@ XPlotter_avx.exe -id 17559140197979902351 -sn 0 -n 20000 -t 4 -path F:\burst\plo
 
         <!-- Link to next page -->
         
-          <a href="../../mining/windows/" title="Windows"
+          <a href="../linux/" title="Linux"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -900,7 +913,7 @@ XPlotter_avx.exe -id 17559140197979902351 -sn 0 -n 20000 -t 4 -path F:\burst\plo
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Windows
+                Linux
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
