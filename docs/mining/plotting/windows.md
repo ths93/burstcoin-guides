@@ -4,7 +4,7 @@
 This tutorial will teach you how to plot your drives with [XPlotter](https://github.com/Blagodarenko/XPlotter/releases), a CPU plotter creating optimized plot files.
 
 !!! info
-    With Qbundle, the software is already included: just click "Tools" -> "Plotter". A guide is also present in the plotter page - it is recommended to follow the instructions detailed there.
+    With Qbundle, the software is already included: just click "Tools" --> "Plotter". A guide is also present in the plotter page - it is recommended to follow the instructions detailed there.
 
 If you want to use the software as a standalone, follow the instructions here.
 
@@ -14,20 +14,6 @@ If you want to use the software as a standalone, follow the instructions here.
 * [XPlotter](https://github.com/Blagodarenko/XPlotter/releases)
 
 ### Configuration
-
-!!! info "Plot files"
-    There are a few things you have to understand to get a general overview of the nature of plot files.
-
-    Plot files consist of **nonces** which contain the cryptographic solutions you will be mining with.
-
-    * **1 nonce = 262144 bytes**
-
-    Plot file size is measured in nonces so you will have to convert the size of your dedicated disk space to nonces. Nonce calculators exist to make this process easier.
-
-    Nonces are ordered **linearly** in **sequential order**. the number they're assigned to is arbitrary but they should **never overlap** (overlapping reduces plot efficiency and triggers an error in most mining software).
-
-    With Xplotter, that is all the technical knowledge you need to operate the software and to create an optimized plot file.
-
 
 To execute Xplotter, it is necessary to create a run script - `run.bat`. This batch contains the parameters for Xplotter, e.g. where and how much to plot and the resources to consume to do so.
 

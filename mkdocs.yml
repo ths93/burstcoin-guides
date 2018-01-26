@@ -51,8 +51,10 @@ pages:
     - Overview: mining/overview.md
     - Plotting:
       - Windows: mining/plotting/windows.md
+      - Linux: mining/plotting/linux.md
     - Mining:
       - Windows: mining/mining/windows.md
+      - Linux: mining/mining/linux.md
   - Troubleshooting: troubleshoot.md
 
 # Extensions
