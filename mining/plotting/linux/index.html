@@ -721,7 +721,7 @@ Detailed setup instructions can be found on the respective github pages.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Example</p>
-<p>The following command starts the plotting process for a <code>2T</code> plot file in <code>/sdd1/plots</code> on a machine with at least <code>32GB</code> on <code>4 cores</code> in <code>asynchronous</code> mode.
+<p>The following command starts the plotting process <strong>as background process</strong> for a <code>2T</code> plot file in <code>/sdd1/plots</code> on a machine with at least <code>32GB</code> on <code>4 cores</code> in <code>asynchronous</code> mode.
 The plot file will be associated with the account <code>11642189530862802431</code>.</p>
 <div class="codehilite"><pre><span></span>nohup ./plot64 -k 11642189530862802431 -x 1 -d /sdd1/plots -m 15G -s 0 -n 2T -t 4 -a &gt; output.log 2&gt;&amp;1 &amp;
 </pre></div>
