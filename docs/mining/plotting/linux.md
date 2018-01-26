@@ -10,7 +10,7 @@ Detailed setup instructions can be found on the respective github pages.
     All plot files are generated account-dependent, therefore changing accounts for mining, forces you to plot your files again.
 
 !!! tip "Example"
-    The following command starts the plotting process for a `2T` plot file in `/sdd1/plots` on a machine with at least `32GB` on `4 cores` in `asynchronous` mode.
+    The following command starts the plotting process **as background process** for a `2T` plot file in `/sdd1/plots` on a machine with at least `32GB` on `4 cores` in `asynchronous` mode.
     The plot file will be associated with the account `11642189530862802431`.
 
     ```
