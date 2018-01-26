@@ -1,5 +1,5 @@
 !!! danger
-    Before you start, we strongly recommend to read the according [Burstwiki page on plotting](https://burstwiki.org/wiki/Technical_information_to_create_plot_files) and the [Burstwiki page on mining](https://burstwiki.org/wiki/Technical_information_about_mining_and_block_forging). 
+    Before you start, we strongly advise you to read the according [Burstwiki page on plotting](https://burstwiki.org/wiki/Technical_information_to_create_plot_files) and the [Burstwiki page on mining](https://burstwiki.org/wiki/Technical_information_about_mining_and_block_forging). 
 
 In order to mine Burst, you first have to plot the disk space you want to use. Plotting may be a time and energy-consuming task, however it only has to be done once.
 
