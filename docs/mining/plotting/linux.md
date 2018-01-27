@@ -28,7 +28,7 @@ Detailed setup instructions can be found on the respective github pages.
 
     This means for the next plotting process which plots the next file, we need to start at nonce:
 
-     `previous startnonce` + `previous nonces plotted` + `1`
+     `previous startnonce` + `previous nonces plotted` + `1` = `next startnonce`
 
     --> `0` + `8388608` + `1` = `8388609`
 
