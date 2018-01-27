@@ -733,7 +733,7 @@ e.g. our first command plots this file.
 <div class="codehilite"><pre><span></span>11642189530862802431_0_8388608_8388608
 </pre></div></p>
 <p>This means for the next plotting process which plots the next file, we need to start at nonce:</p>
-<p><code>previous startnonce</code> + <code>previous nonces plotted</code> + <code>1</code></p>
+<p><code>previous startnonce</code> + <code>previous nonces plotted</code> + <code>1</code> = <code>next startnonce</code></p>
 <p>&rarr; <code>0</code> + <code>8388608</code> + <code>1</code> = <code>8388609</code></p>
 <p>and we plot the next file.</p>
 <div class="codehilite"><pre><span></span>nohup ./plot64 -k 11642189530862802431 -x 1 -d /sdd1/plots -m 15G -s 8388609 -n 2T -t 4 -a &gt; output.log 2&gt;&amp;1 &amp;
