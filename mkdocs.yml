@@ -42,6 +42,8 @@ pages:
       - Linux: wallet/install/linux.md
       - MacOS: wallet/install/macos.md
       - Docker: wallet/install/docker.md
+    - Usage:
+      - Create and activate your first account: wallet/install/newaccount.md
   - Node:
     - Setup:
       - Windows: node/setup/windows.md
