@@ -1,6 +1,6 @@
 Qbundle is a wrapper / launcher for the Burst Reference Software offering additional features such as plotting and mining tools, passphrase management and more. This tutorial is going to walk you through getting the Burst Core wallet completely set up using Qbundle on your Windows sytem.
 
-### What You Need
+## Prerequisites
 
 - Most Recent Java Version
   - Select the download ending in “.exe”
@@ -8,7 +8,9 @@ Qbundle is a wrapper / launcher for the Burst Reference Software offering additi
 - [Qbundle](https://github.com/PoC-Consortium/Qbundle/releases/)
   - Download “Qbundle_installer_[latest version].msi”
 
-### Local Wallet Install Steps
+---
+
+## Installation Steps
 
 - Download all files listed above.
 - Install Java JRE using the install wizards.
@@ -32,7 +34,7 @@ Qbundle is a wrapper / launcher for the Burst Reference Software offering additi
 
 At this point the installation is finished, but you must leave the Qbundle running for it to complete the synchronization of the blockchain. If you do not have a wallet already you can create one now, but you will not be able to send or receive any transactions until the blockchain is fully synchronized. If you are trying to make a time sensitive transaction, use an online wallet. The same wallet used online will be available to use on your local wallet after the blockchain is synchronized.
 
-### Qbundle Tips
+## Qbundle Tips
 
 - Checking for updates
   - File –> Check for updates

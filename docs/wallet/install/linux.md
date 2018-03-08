@@ -30,8 +30,8 @@ The Quick- Install downloads a shell script and executes it directly. If you're 
 
 ```
 wget http://package.cryptoguru.org/debian/init.sh
-less install.sh
-bash install.sh
+less init.sh
+bash init.sh
 ```
 
 and now you can install packages like:
@@ -93,8 +93,8 @@ The Quick- Install downloads a shell script and executes it directly. If you're 
 
 ```
 wget http://package.cryptoguru.org/ubuntu/init.sh
-less install.sh
-bash install.sh
+less init.sh
+bash init.sh
 ```
 
 and now you can install packages like:
