@@ -55,7 +55,8 @@ pages:
     - Mining:
       - Windows: mining/mining/windows.md
       - Linux: mining/mining/linux.md
-  - Troubleshooting: troubleshoot.md
+  - FAQ:
+    - Frequently Asked Questions: faq/faq.md
 
 # Extensions
 markdown_extensions:
