@@ -29,6 +29,8 @@ extra:
       link: https://github.com/poc-consortium
     - type: twitter
       link: https://twitter.com/burstcoin_dev
+    - type: reddit
+      link: https://www.reddit.com/r/burstcoin/
 
 extra_css:
   - 'stylesheets/burstcoin.css'
