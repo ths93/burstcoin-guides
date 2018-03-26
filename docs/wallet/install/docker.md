@@ -7,7 +7,7 @@ The Burst Reference Software can be run with Docker and Docker-Compose. Since Do
 
 ## Database
 
-Currently, Docker images for BRS version 1.3.6cg with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain. We recommend MariaDB as database for the Burst Reference Software.
+Currently, Docker images for BRS version 2.0.1 with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain.
 
 ### MariaDB
 
@@ -18,7 +18,7 @@ version: '3'
 
 services:
   burstcoin:
-    image: burstcoin/core:1.3.6cg-mariadb
+    image: burstcoin/core:2.0.1-mariadb
     restart: always
     depends_on:
      - mariadb
@@ -28,8 +28,9 @@ services:
   mariadb:
     image: mariadb:10
     environment:
-     - MYSQL_ROOT_PASSWORD=burstwallet
-     - MYSQL_DATABASE=burstwallet
+     - MYSQL_ROOT_PASSWORD=burst
+     - MYSQL_DATABASE=burst
+    command: mysqld --character_set_server=utf8mb4
     volumes:
      - ./burst_db:/var/lib/mysql
 ```
@@ -50,7 +51,7 @@ With the `-d` flag, both containers are started as background processes. A `burs
 Alternatively, H2 can be used as database to store the blockchain. H2 is an embedded database, therefore one does not have to run it in a separate container. Simply run the following command.
 
 ```
-docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:1.3.6cg-h2
+docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0.1-h2
 ```
 
 `"$(pwd)"/burst_db` is the path to the folder which is mounted to the H2 storage. If it does not exist a new `burst_db` folder is created in the current directory.
@@ -60,7 +61,7 @@ docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_d
 
 ## Custom configuration
 
-In order to use a custom config - `nxt.properties` file, you can simply mount a folder containing the `nxt-default.properties` and the `nxt.properties` to the `/etc/burstcoin/conf` mount point.
+In order to use a custom config - `brs.properties` file, you can simply mount a folder containing the `brs-default.properties` and the `brs.properties` to the `/etc/burstcoin/conf` mount point.
 
 **MariaDB**
 
@@ -69,7 +70,7 @@ version: '3'
 
 services:
   burstcoin:
-    image: burstcoin/core:1.3.6cg-mariadb
+    image: burstcoin/core:2.0.1-mariadb
     restart: always
     depends_on:
      - mariadb
@@ -81,8 +82,9 @@ services:
   mariadb:
     image: mariadb:10
     environment:
-     - MYSQL_ROOT_PASSWORD=burstwallet
-     - MYSQL_DATABASE=burstwallet
+     - MYSQL_ROOT_PASSWORD=burst
+     - MYSQL_DATABASE=burst
+    command: mysqld --character_set_server=utf8mb4
     volumes:
      - ./burst_db:/var/lib/mysql
 ```
@@ -90,5 +92,5 @@ services:
 **H2**
 
 ```
-docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -v "$(pwd)"/conf:/etc/burstcoin/conf -d burstcoin/core:1.3.6cg-h2
+docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -v "$(pwd)"/conf:/etc/burstcoin/conf -d burstcoin/core:2.0.1-h2
 ```
