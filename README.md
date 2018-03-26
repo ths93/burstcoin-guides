@@ -1,5 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # [Burstcoin Guides](https://poc-consortium.github.io/burstcoin-guides/)
 
 This repository holds the source for the documentation of the Burstcoin guides. The containing guides should help new people to BURST to become familiar with Burstcoin activites and opportunities.
