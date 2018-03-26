@@ -854,14 +854,14 @@
 <li><a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
 </ul>
 <h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
-<p>Currently, Docker images for BRS version 1.3.6cg with MariaDB or H2 Database are available at <a href="https://hub.docker.com/r/burstcoin/core/tags/">Docker Hub</a>. You have to choose one of them, which is used to store the blockchain. We recommend MariaDB as database for the Burst Reference Software.</p>
+<p>Currently, Docker images for BRS version 2.0.1 with MariaDB or H2 Database are available at <a href="https://hub.docker.com/r/burstcoin/core/tags/">Docker Hub</a>. You have to choose one of them, which is used to store the blockchain.</p>
 <h3 id="mariadb">MariaDB<a class="headerlink" href="#mariadb" title="Permanent link">&para;</a></h3>
 <p>The following <code>docker-compose.yml</code> file can be used to run the BRS with MariaDB database in containers.</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&#39;3&#39;</span>
 
 <span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">burstcoin</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:1.3.6cg-mariadb</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0.1-mariadb</span>
     <span class="l l-Scalar l-Scalar-Plain">restart</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
     <span class="l l-Scalar l-Scalar-Plain">depends_on</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
@@ -871,8 +871,9 @@
   <span class="l l-Scalar l-Scalar-Plain">mariadb</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mariadb:10</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
-     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_ROOT_PASSWORD=burstwallet</span>
-     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=burstwallet</span>
+     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_ROOT_PASSWORD=burst</span>
+     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=burst</span>
+    <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mysqld --character_set_server=utf8mb4</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./burst_db:/var/lib/mysql</span>
 </pre></div>
@@ -888,7 +889,7 @@
 </div>
 <h3 id="h2">H2<a class="headerlink" href="#h2" title="Permanent link">&para;</a></h3>
 <p>Alternatively, H2 can be used as database to store the blockchain. H2 is an embedded database, therefore one does not have to run it in a separate container. Simply run the following command.</p>
-<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:1.3.6cg-h2
+<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0.1-h2
 </pre></div>
 
 <p><code>&quot;$(pwd)&quot;/burst_db</code> is the path to the folder which is mounted to the H2 storage. If it does not exist a new <code>burst_db</code> folder is created in the current directory.</p>
@@ -897,13 +898,13 @@
 <p>The Dockerfiles used to create the Docker images can be found on <a href="https://github.com/PoC-Consortium/burstcoin-docker">Github - https://github.com/PoC-Consortium/burstcoin-docker</a></p>
 </div>
 <h2 id="custom-configuration">Custom configuration<a class="headerlink" href="#custom-configuration" title="Permanent link">&para;</a></h2>
-<p>In order to use a custom config - <code>nxt.properties</code> file, you can simply mount a folder containing the <code>nxt-default.properties</code> and the <code>nxt.properties</code> to the <code>/etc/burstcoin/conf</code> mount point.</p>
+<p>In order to use a custom config - <code>brs.properties</code> file, you can simply mount a folder containing the <code>brs-default.properties</code> and the <code>brs.properties</code> to the <code>/etc/burstcoin/conf</code> mount point.</p>
 <p><strong>MariaDB</strong></p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&#39;3&#39;</span>
 
 <span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">burstcoin</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:1.3.6cg-mariadb</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0.1-mariadb</span>
     <span class="l l-Scalar l-Scalar-Plain">restart</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
     <span class="l l-Scalar l-Scalar-Plain">depends_on</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
@@ -915,14 +916,15 @@
   <span class="l l-Scalar l-Scalar-Plain">mariadb</span><span class="p p-Indicator">:</span>
     <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mariadb:10</span>
     <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
-     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_ROOT_PASSWORD=burstwallet</span>
-     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=burstwallet</span>
+     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_ROOT_PASSWORD=burst</span>
+     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=burst</span>
+    <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">mysqld --character_set_server=utf8mb4</span>
     <span class="l l-Scalar l-Scalar-Plain">volumes</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./burst_db:/var/lib/mysql</span>
 </pre></div>
 
 <p><strong>H2</strong></p>
-<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -v &quot;$(pwd)&quot;/conf:/etc/burstcoin/conf -d burstcoin/core:1.3.6cg-h2
+<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -v &quot;$(pwd)&quot;/conf:/etc/burstcoin/conf -d burstcoin/core:2.0.1-h2
 </pre></div>
                 
                   
