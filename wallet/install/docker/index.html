@@ -882,7 +882,7 @@
 <div class="codehilite"><pre><span></span>docker-compose up -d
 </pre></div>
 
-<p>With the <code>-d</code> flag, both containers are started as background processes. A <code>burst_db</code> folder will be created in the directory of the <code>docker-compose.yml</code> file, if it was not created before. This folder is mounted to the MariaDB storage and holds the <code>burstwallet</code> database containing the blockchain. The containers can be stopped and removed at any time via <code>docker-compose down</code>. With the next start, the <code>burst_db</code> folder will be mounted again and your previous blockchain status will be loaded.</p>
+<p>With the <code>-d</code> flag, both containers are started as background processes. A <code>burst_db</code> folder will be created in the directory of the <code>docker-compose.yml</code> file, if it was not created before. This folder is mounted to the MariaDB storage and holds the <code>burst</code> database containing the blockchain. The containers can be stopped and removed at any time via <code>docker-compose down</code>. With the next start, the <code>burst_db</code> folder will be mounted again and your previous blockchain status will be loaded.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>You may encounter an PoolInitializationError when not clearing containers on restart of the docker-compose.yml. In case there are old containers, remove them with <code>docker rm $(docker ps -a -q)</code></p>
