@@ -7,7 +7,10 @@ The Burst Reference Software can be run with Docker and Docker-Compose. Since Do
 
 ## Database
 
-Currently, Docker images for BRS version 2.0.1 with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain.
+Currently, Docker images for BRS version 2.0.2 with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain.
+
+!!! Info
+	Minor version updates (Bugfixes) will be pushed into major image tags. Look up the exact version an image contains on [Docker Hub](https://hub.docker.com/r/burstcoin/core/).
 
 ### MariaDB
 
@@ -18,7 +21,7 @@ version: '3'
 
 services:
   burstcoin:
-    image: burstcoin/core:2.0.1-mariadb
+    image: burstcoin/core:2.0-mariadb
     restart: always
     depends_on:
      - mariadb
@@ -51,7 +54,7 @@ With the `-d` flag, both containers are started as background processes. A `burs
 Alternatively, H2 can be used as database to store the blockchain. H2 is an embedded database, therefore one does not have to run it in a separate container. Simply run the following command.
 
 ```
-docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0.1-h2
+docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0-h2
 ```
 
 `"$(pwd)"/burst_db` is the path to the folder which is mounted to the H2 storage. If it does not exist a new `burst_db` folder is created in the current directory.
@@ -70,7 +73,7 @@ version: '3'
 
 services:
   burstcoin:
-    image: burstcoin/core:2.0.1-mariadb
+    image: burstcoin/core:2.0-mariadb
     restart: always
     depends_on:
      - mariadb
@@ -92,5 +95,5 @@ services:
 **H2**
 
 ```
-docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -v "$(pwd)"/conf:/etc/burstcoin/conf -d burstcoin/core:2.0.1-h2
+docker run -p 8123:8123 -p 8125:8125 -v "$(pwd)"/burst_db:/etc/burstcoin/burst_db -v "$(pwd)"/conf:/etc/burstcoin/conf -d burstcoin/core:2.0-h2
 ```
