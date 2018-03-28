@@ -854,14 +854,18 @@
 <li><a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
 </ul>
 <h2 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h2>
-<p>Currently, Docker images for BRS version 2.0.1 with MariaDB or H2 Database are available at <a href="https://hub.docker.com/r/burstcoin/core/tags/">Docker Hub</a>. You have to choose one of them, which is used to store the blockchain.</p>
+<p>Currently, Docker images for BRS version 2.0.2 with MariaDB or H2 Database are available at <a href="https://hub.docker.com/r/burstcoin/core/tags/">Docker Hub</a>. You have to choose one of them, which is used to store the blockchain.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Minor version updates (Bugfixes) will be pushed into major image tags. Look up the exact version an image contains on <a href="https://hub.docker.com/r/burstcoin/core/">Docker Hub</a>.</p>
+</div>
 <h3 id="mariadb">MariaDB<a class="headerlink" href="#mariadb" title="Permanent link">&para;</a></h3>
 <p>The following <code>docker-compose.yml</code> file can be used to run the BRS with MariaDB database in containers.</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&#39;3&#39;</span>
 
 <span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">burstcoin</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0.1-mariadb</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0-mariadb</span>
     <span class="l l-Scalar l-Scalar-Plain">restart</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
     <span class="l l-Scalar l-Scalar-Plain">depends_on</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
@@ -889,7 +893,7 @@
 </div>
 <h3 id="h2">H2<a class="headerlink" href="#h2" title="Permanent link">&para;</a></h3>
 <p>Alternatively, H2 can be used as database to store the blockchain. H2 is an embedded database, therefore one does not have to run it in a separate container. Simply run the following command.</p>
-<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0.1-h2
+<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -d burstcoin/core:2.0-h2
 </pre></div>
 
 <p><code>&quot;$(pwd)&quot;/burst_db</code> is the path to the folder which is mounted to the H2 storage. If it does not exist a new <code>burst_db</code> folder is created in the current directory.</p>
@@ -904,7 +908,7 @@
 
 <span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">burstcoin</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0.1-mariadb</span>
+    <span class="l l-Scalar l-Scalar-Plain">image</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">burstcoin/core:2.0-mariadb</span>
     <span class="l l-Scalar l-Scalar-Plain">restart</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
     <span class="l l-Scalar l-Scalar-Plain">depends_on</span><span class="p p-Indicator">:</span>
      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
@@ -924,7 +928,7 @@
 </pre></div>
 
 <p><strong>H2</strong></p>
-<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -v &quot;$(pwd)&quot;/conf:/etc/burstcoin/conf -d burstcoin/core:2.0.1-h2
+<div class="codehilite"><pre><span></span>docker run -p 8123:8123 -p 8125:8125 -v &quot;$(pwd)&quot;/burst_db:/etc/burstcoin/burst_db -v &quot;$(pwd)&quot;/conf:/etc/burstcoin/conf -d burstcoin/core:2.0-h2
 </pre></div>
                 
                   
