@@ -7,7 +7,7 @@ The Burst Reference Software can be run with Docker and Docker-Compose. Since Do
 
 ## Database
 
-Currently, Docker images for BRS version 2.0.2 with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain.
+Currently, Docker images for BRS version 2.0 with MariaDB or H2 Database are available at [Docker Hub](https://hub.docker.com/r/burstcoin/core/tags/). You have to choose one of them, which is used to store the blockchain.
 
 !!! Info
 	Minor version updates (Bugfixes) will be pushed into major image tags. Look up the exact version an image contains on [Docker Hub](https://hub.docker.com/r/burstcoin/core/).
